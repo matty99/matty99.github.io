@@ -1,7 +1,5 @@
 html { background-image: url('../images/tbg1.png'); }
-body {
-	background-color: transparent;
-}
+body { margin-top: 20px; background-color: transparent; }
 
 #sidebar {
 	border-right: solid 2px #999;
@@ -37,18 +35,21 @@ body {
 }
 #menu li span { float: right; }
 #menu li a {
-	text-align: left;
+	color: #fff;
 	font-weight: bold;
+	text-align: left;
 }
+	
 /* Styles taken from bootstrap buttons */
-#menu li a.btn-default { color: #333333; background-color: #ffffff; border-color: #cccccc; }
-#menu li a.btn-default:hover { color: #333333; background-color: #ebebeb; border-color: #adadad; }
+#menu li a.btn-default { color:#333; background-color: #ffffff; border-color: #cccccc; }
+#menu li a.btn-default:hover { background-color: #ebebeb; border-color: #adadad; }
 #menu li a.btn-primary:hover { background-color: #3276b1; border-color: #285e8e; }
 #menu li a.btn-warning:hover { background-color: #ed9c28; border-color: #d58512; }
 #menu li a.btn-danger:hover { background-color: #d2322d; border-color: #ac2925; }
 #menu li a.btn-success:hover { background-color: #47a447; border-color: #398439; }
 #menu li a.btn-info:hover { background-color: #39b3d7; border-color: #269abc; }
 
-#content {
-
+#content { 
+	padding-left: 30px;
+	color: #aaa;
 }
