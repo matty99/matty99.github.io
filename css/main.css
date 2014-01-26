@@ -7,6 +7,10 @@ body {
 	background-color: transparent;
 	position: relative;
 }
+h3 {
+	text-decoration: underline;
+	font-style: italic;
+}
 .row { margin: 0px; }
 
 #photo-container {
@@ -65,4 +69,16 @@ body {
 	border-left: solid 2px #999;
 	padding: 0px 50px 20px 50px;
 	color: #aaa;
+}
+
+#projects img {
+	height: 100px;
+}
+
+#comics {
+	text-align: center;
+}
+#comics img {
+	margin: 10px;
+	height: 200px;
 }
