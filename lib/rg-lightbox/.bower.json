@@ -1,0 +1,37 @@
+{
+  "name": "rg-lightbox",
+  "main": "rg-lightbox.js",
+  "version": "0.0.1",
+  "authors": [
+    "Kevin Lopez <eduardo@rgkevin.it>"
+  ],
+  "description": "Simple and faster lightbox width CSS3 animation, responsive and AMD available",
+  "keywords": [
+    "lightobox",
+    "css3",
+    "lightweight",
+    "spinjs",
+    "spin",
+    "responsive",
+    "amd"
+  ],
+  "license": "MIT",
+  "homepage": "http://rgkevin.it",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "2f44e7c71b2705e379cbae847faea6cb443c37e9"
+  },
+  "_source": "git://github.com/RGkevin/rg-lightbox.git",
+  "_target": "~0.0.1",
+  "_originalSource": "rg-lightbox",
+  "_direct": true
+}

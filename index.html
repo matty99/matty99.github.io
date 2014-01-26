@@ -6,7 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<title>Mateusz Bocian - Developer Profile</title>
-	<link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="lib/rg-lightbox/rg-lightbox.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
@@ -35,15 +37,20 @@
 			<div id="content" class="col-md-8" role="main">
 				<div id="about">
 					<h1>About Me</h1>
-					<p>In progres...</p>
 					<p>
 						That's me over there on the right, your left. Well, it's not really me, it's a picture of me. 
 						I'm not sure I had to mention that as it is a website about me and things that I have done. 
 						It would be odd if I built an entire site and then used someone else's picture. 
-						Anyways...I'm currently pursuing a Computer Science degree at the University of Toronto. 
-						I'm that guy that people talk to when: they need computer help, when they need any web-related help, when the campus wi-fi stops working, when they forget their netflix password, when their vaccuum or dryer isn't working....you get the idea.
+					</p>
+					<p>
+						Anyways, I'm finishing up a Computer Science degree at the University of Toronto and I've become that guy. 
+						The guy that people talk to when: their computer is slow, when they need any web-related help, when the campus wi-fi stops working, when they forget their netflix password, when their vaccuum or dryer isn't working....you get the idea.
+						When I was 13 I learned HTML and CSS, and built my first static website.
+						Since then I have been fiddling with websites and I really got into web development in university.
+						Soon after I was making the website for the orientation week, then redesigning the student council site, and now I'm attempting to freelance.
 					</p>
 				</div>
+				<hr>
 				<div id="projects">
 					<h1>Projects</h1>
 					<p>In progres...</p>
@@ -90,24 +97,32 @@
 						websites and displayed search results in a Java UI.
 					</p>
 				</div>
+				<hr>
 				<div id="extras">
 					<h1>Extras</h1>
 					<p>In progres...</p>
-					<img class="img-responsive img-thumbnail" src="images/linkedin.png">
+					<img src="images/linkedin.png" data-lightbox="image-1" title="My caption">
 					<img class="img-responsive img-thumbnail" src="images/thresh.jpg">
 
 					<img class="img-responsive img-thumbnail" src="images/orientation2013.png">
-					<img class="img-responsive img-thumbnail" src="images/orientation2012.png">
-					<img class="img-responsive img-thumbnail" src="images/orientation2011.png">
 
-					<img class="img-responsive img-thumbnail" src="images/torontotenniscamp2012.png">         
+					<a data-lightbox href="images/orientation2012.png">
+						<img class="img-responsive img-thumbnail" src="images/orientation2012.png">
+					</a>
+					<a data-lightbox href="images/orientation2011.png">
+						<img class="img-responsive img-thumbnail" src="images/orientation2011.png">
+					</a>
+
+					<img class="img-responsive img-thumbnail" src="images/torontotenniscamp2012.png">
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<script src="lib/jquery/jquery.min.js"></script>
+	<script src="lib/rg-lightbox/spin.js"></script>
+	<script src="lib/rg-lightbox/rg-lightbox.js"></script>
 	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

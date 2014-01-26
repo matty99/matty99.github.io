@@ -12,6 +12,7 @@
 			appendChild(msViewportStyle);
 		}
 
+		// Bootstrap affix sidebar
 		var $sideBar = $('#sidebar')
 		$sideBar.affix({
 			offset: {
@@ -20,3 +21,6 @@
 		})
 	})
 }(jQuery)
+
+// Enabling light boxes
+var myCustomLightbox = new RGlightbox({/*options*/});
