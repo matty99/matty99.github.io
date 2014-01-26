@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 	<title>Mateusz Bocian - Developer Profile</title>
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-
-	<div class="row">
-		<div class="container">
-			<div id="sidebar" class="col-md-4">
-				<div id="photo"></div>
-				<div id="menu">
-					<ul class="nav nav-pills nav-stacked">
-						<li><a class="active btn btn-default" href="#about">About <span class="glyphicon glyphicon-user"></span></a></li>
-						<li><a class="btn btn-success" href="#projects">Projects <span class="glyphicon glyphicon-briefcase"></a></li>
-						<li><a class="btn btn-primary" href="#extras">Extras <span class="glyphicon glyphicon-star-empty"></a></li>
-						<li><a class="btn btn-warning" href="documents/Resume2014.pdf">Resume <span class="glyphicon glyphicon-paperclip"></span></a></li>
-						<li><a class="btn btn-danger" href="mailto:mateusz.bocian@mail.utoronto.ca">Contact Me <span class="glyphicon glyphicon-envelope"></span></a></li>
+	<div class="container bs-docs-container">
+		<div class="row">
+			<div class="col-md-4">
+				<div id="sidebar" class="hidden-print" role="complementary">
+					<ul id="menu" class="nav nav-pills nav-stacked">
+						<li>
+							<div id="photo-container">
+								<img class="img-responsive img-thumbnail" src="images/mateusz.jpg">
+							</div>
+						</li>
+						<li><a class="btn btn-default" href="#about">About <span class="glyphicon glyphicon-user pull-right"></span></a></li>
+						<li><a class="btn btn-success" href="#projects">Projects <span class="glyphicon glyphicon-briefcase pull-right"></span></a></li>
+						<li><a class="btn btn-primary" href="#extras">Extras <span class="glyphicon glyphicon-star-empty pull-right"></span></a></li>
+						<li><a class="btn btn-warning" href="documents/Resume2014.pdf">Resume <span class="glyphicon glyphicon-paperclip pull-right"></span></a></li>
+						<li>
+							<a class="btn btn-danger" href="mailto:mateusz.bocian@mail.utoronto.ca">
+								Contact Me <span class="glyphicon glyphicon-envelope pull-right"></span>
+							</a>
+						</li>              
 					</ul>
 				</div>
 			</div>
-			<div id="content" class="col-md-8">
+			<div id="content" class="col-md-8" role="main">
 				<div id="about">
 					<h1>About Me</h1>
 					<p>In progres...</p>
@@ -29,24 +40,73 @@
 						That's me over there on the right, your left. Well, it's not really me, it's a picture of me. 
 						I'm not sure I had to mention that as it is a website about me and things that I have done. 
 						It would be odd if I built an entire site and then used someone else's picture. 
-						Anyways...I'm currently pursuing a Bachelor of Science at the University of Toronto. My major being Computer Science, of course. 
+						Anyways...I'm currently pursuing a Computer Science degree at the University of Toronto. 
 						I'm that guy that people talk to when: they need computer help, when they need any web-related help, when the campus wi-fi stops working, when they forget their netflix password, when their vaccuum or dryer isn't working....you get the idea.
 					</p>
 				</div>
 				<div id="projects">
 					<h1>Projects</h1>
 					<p>In progres...</p>
+					<p>
+						<strong>University College Orientation (2013)</strong> - This is my
+						third effort at this website. You can see my past efforts on the <a
+						href="past_works.html">past works</a> page I'm currently working on
+						the registration and payment process using Stripe and hope to move
+						on to design shortly. I'm thinking about playing around with some
+						frameworks, specifically Django.
+					</p>
+					<p>
+						<strong>Stock Target Prices</strong> - This is a web start-up that a
+						friend of mine started. It aggregates financial projections of
+						analysts. In the early stages of the project I worked with the tool
+						in charge of database control to increase efficiency of the site and
+						while adding new functionality to the tool. I help out where I can
+						from time to time. <a href="http://stocktargetprices.com/">Take
+						a look</a>!
+					</p>
+					<p>
+						<strong>Computer Graphics (2013)</strong> - ....
+					</p>
+					<p>
+						<strong>Toronto Tennis Camp (2012)</strong> - I had a month to
+						refresh the look of a camp website. I met frequently with my
+						supervisor to ensure the content was modified quickly and precisely
+						to their liking. You can see the finished product on my <a
+						href="past_works.html"> past works</a> page.
+					</p>
+					<p>
+						<strong>Search Engine (2012)</strong> - Worked in a team of five to
+						develop a request for proposal (RFP) search engine that was hosted
+						live on a free web server. Unfortunately it has been taken down now.
+						The crawler portion of the search engine was written in Java and it
+						prepared the database entries. The web portion used PHP and MySQL to
+						provide search results based on keywords found within the documents.
+						For the project we used a scrum-like development cycle.
+					</p>
+					<p>
+						<strong>Search Engine (2010)</strong> - In a team of four we created
+						a Java-based Faculty Member search engine using the Scrum
+						development technique. The program crawled a provided list of
+						websites and displayed search results in a Java UI.
+					</p>
 				</div>
 				<div id="extras">
 					<h1>Extras</h1>
 					<p>In progres...</p>
+					<img class="img-responsive img-thumbnail" src="images/linkedin.png">
+					<img class="img-responsive img-thumbnail" src="images/thresh.jpg">
+
+					<img class="img-responsive img-thumbnail" src="images/orientation2013.png">
+					<img class="img-responsive img-thumbnail" src="images/orientation2012.png">
+					<img class="img-responsive img-thumbnail" src="images/orientation2011.png">
+
+					<img class="img-responsive img-thumbnail" src="images/torontotenniscamp2012.png">         
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

@@ -1,47 +1,58 @@
-html { background-image: url('../images/tbg1.png'); }
-body { margin-top: 20px; background-color: transparent; }
-
-#sidebar {
-	border-right: solid 2px #999;
-	padding: 30px 0px;
+html { 
+	background-image: url('../images/tbg1.png');
+	background-attachment: fixed;
 }
+body { 
+	margin-top: 20px;
+	background-color: transparent;
+	position: relative;
+}
+.row { margin: 0px; }
 
-#photo {
-	width: 200px;
-	height: 235px;
-	margin: auto;
-	background-image: url('../images/mateusz.jpg');
-	background-size: 100% 100%;
-	border: solid 3px #aaa;
-	border-radius: 5px;
+#photo-container {
+	width: 250px;
+	margin: 30px auto;
 }
 
 #menu {
+	max-width: 400px;
 	margin: auto;
-	width: 400px;
-	padding: 20px;
 }
-#menu ul {
-	width: 100%;
-	max-width: 350px;
-	margin: auto;
-	padding: 0px 20px;
-}
+
 #menu li {
-	width: 100%;
-	color: white;
-	margin: 5px;
+	margin-top: 5px;
 	border-radius: 3px;
 }
-#menu li span { float: right; }
+
 #menu li a {
 	color: #fff;
 	font-weight: bold;
 	text-align: left;
+	outline: 0;
 }
-	
-/* Styles taken from bootstrap buttons */
+
+/* Fix missing affix in mobile */
+#sidebar.affix { position: static; }
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+	/* Widen the fixed sidebar */
+	#sidebar.affix {
+		position: fixed; /* Undo the static from mobile first approach */
+		width: 280px;
+		top: 10px;
+	}
+}
+@media (min-width: 1200px) {
+	/* Widen the fixed sidebar again */
+	#sidebar.affix {
+		width: 350px;
+	}
+}
+
+/* Styles taken from bootstrap buttons for purpose of menu correction */
 #menu li a.btn-default { color:#333; background-color: #ffffff; border-color: #cccccc; }
+#menu>li.active>a.btn-success { background-color: rgb(92, 184, 92); }
 #menu li a.btn-default:hover { background-color: #ebebeb; border-color: #adadad; }
 #menu li a.btn-primary:hover { background-color: #3276b1; border-color: #285e8e; }
 #menu li a.btn-warning:hover { background-color: #ed9c28; border-color: #d58512; }
@@ -49,7 +60,9 @@ body { margin-top: 20px; background-color: transparent; }
 #menu li a.btn-success:hover { background-color: #47a447; border-color: #398439; }
 #menu li a.btn-info:hover { background-color: #39b3d7; border-color: #269abc; }
 
-#content { 
-	padding-left: 30px;
+
+#content {
+	border-left: solid 2px #999;
+	padding: 0px 50px 20px 50px;
 	color: #aaa;
 }
