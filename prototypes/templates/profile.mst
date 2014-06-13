@@ -1,0 +1,13 @@
+{{#people}}
+<div class="profile">
+	<div class="profile-image">
+		<img src="{{image}}">
+	</div>
+	<div class="profile-content">
+		<h1>{{first-name}} {{last-name}}</h1>
+		<ul>{{#education}}<li>{{.}}</li>{{/education}}</ul>
+		<h2>{{position}} at {{organization}}</h2>
+		<p>{{blurb}}</p>
+	</div>
+</div>
+{{/people}}

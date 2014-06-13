@@ -1,0 +1,264 @@
+.tags {
+  list-style: none;
+  padding: 0px;
+}
+.tags li {
+  display: inline-block;
+}
+.tags li .circle {
+  width: 50px;
+  height: 50px;
+  background-color: #FF4136;
+  border-radius: 25px;
+  display: table;
+  text-align: center;
+  margin: 2px;
+}
+.tags li .circle:hover {
+  background-color: #FF851B;
+}
+.tags li .circle span {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 30px;
+}
+.tags li .selected {
+  background-color: #01FF70;
+}
+.profile .profile-image img {
+  height: 200px;
+}
+.profile .tags li .circle {
+  background-color: #FF851B;
+}
+#scrolling-profile header {
+  width: 400px;
+  margin: auto;
+}
+#scrolling-profile .profile-image {
+  margin: auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: #eee;
+  display: table;
+}
+#scrolling-profile .profile-image img {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: auto;
+  margin: auto;
+}
+#scrolling-profile h1 {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px 0px;
+}
+#scrolling-profile h2 {
+  text-align: center;
+  font-size: 18px;
+  margin: 5px 0px;
+  font-weight: normal;
+  color: #555;
+}
+#scrolling-profile .education {
+  margin: auto;
+  width: 400px;
+  padding: 10px 0px;
+}
+#scrolling-profile .education h4 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  margin: 0px;
+}
+#scrolling-profile .education ul {
+  margin: 0px;
+}
+#scrolling-profile .blurb {
+  font-style: italic;
+  color: #333;
+  padding: 10px 0px;
+}
+#scrolling-profile main {
+  width: 75%;
+  margin: auto;
+}
+#scrolling-profile article header {
+  margin: 0px;
+}
+#scrolling-profile article h1 {
+  text-align: left;
+  color: #222;
+}
+#scrolling-profile article span {
+  font-size: 30px;
+  color: #222;
+  margin: 5px;
+}
+#scrolling-profile article footer {
+  text-align: right;
+}
+#scrolling-profile article footer span {
+  cursor: pointer;
+}
+#scrolling-profile .tips {
+  margin: 20px auto;
+}
+#scrolling-profile .tips header {
+  margin: 10px 0px;
+  color: #222;
+}
+#scrolling-profile .tips header h1 {
+  margin: 0px;
+  text-align: left;
+}
+#scrolling-profile .tips article {
+  display: inline-block;
+  width: 33%;
+}
+#scrolling-profile .tips article header {
+  width: 100%;
+  font-size: 25px;
+}
+#scrolling-profile .tips article main {
+  margin: 0px;
+  font-style: italic;
+}
+#tabbed-profile .subject {
+  display: inline-block;
+  width: 250px;
+}
+#tabbed-profile .subject .circle {
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background-color: #eee;
+  display: table;
+}
+#tabbed-profile .subject .circle img {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: auto;
+  margin: auto;
+}
+#tabbed-profile .subject h1 {
+  text-align: center;
+}
+#tabbed-profile .subject h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0px;
+  text-align: center;
+}
+#tabbed-profile ul {
+  display: inline-block;
+}
+#tabbed-profile .intro {
+  position: absolute;
+  width: 500px;
+  top: 10px;
+  left: 400px;
+}
+#tabbed-profile .work {
+  position: absolute;
+  width: 500px;
+  top: 10px;
+  left: 400px;
+}
+#tabbed-profile .impact {
+  position: absolute;
+  width: 500px;
+  top: 10px;
+  left: 400px;
+}
+#tabbed-profile .experience {
+  position: absolute;
+  width: 500px;
+  top: 10px;
+  left: 400px;
+}
+#tabbed-profile .tips {
+  position: absolute;
+  width: 500px;
+  top: 10px;
+  left: 400px;
+}
+#tabbed-profile-alt {
+  margin-top: 200px;
+  text-align: center;
+}
+#tabbed-profile-alt .profile {
+  position: relative;
+  margin: auto;
+  width: 400px;
+}
+#tabbed-profile-alt .subject {
+  display: inline-block;
+  width: 400px;
+}
+#tabbed-profile-alt .subject .circle {
+  margin: 10px;
+  height: 400px;
+  width: 400px;
+  border-radius: 200px;
+  background-color: #eee;
+  display: table;
+}
+#tabbed-profile-alt .subject .circle img {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  width: auto;
+  margin: auto;
+}
+#tabbed-profile-alt .subject h1 {
+  margin: 40px auto 0px;
+  text-align: center;
+}
+#tabbed-profile-alt .subject h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0px;
+  text-align: center;
+}
+#tabbed-profile-alt .section {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+  z-index: 2;
+  opacity: 0.9;
+  top: -50px;
+  left: -50px;
+  color: #eee;
+}
+#tabbed-profile-alt .section div {
+  width: 400px;
+  padding: 20px;
+  margin: auto;
+}
+#tabbed-profile-alt .intro {
+  background-color: #FF4136;
+}
+#tabbed-profile-alt .work {
+  background-color: #001F3F;
+}
+#tabbed-profile-alt .impact {
+  background-color: #3D9970;
+}
+#tabbed-profile-alt .experience {
+  background-color: #B10DC9;
+}
+#tabbed-profile-alt .tips {
+  background-color: #85144B;
+}
+#tabbed-profile-alt ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
