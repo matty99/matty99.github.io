@@ -262,3 +262,50 @@
   margin: 0px;
   padding: 0px;
 }
+#carousel-example-1 {
+  display: block;
+  width: 900px;
+  height: 600px;
+  background: url(../../images/yeoman.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+#carousel-example-1 .item {
+  width: 900px;
+  height: 600px;
+  background: transparent;
+}
+#carousel-example-1 .carousel-caption {
+  color: #fff;
+  padding-left: 200px;
+}
+#carousel-example-2 {
+  display: block;
+  width: 900px;
+  height: 600px;
+  background-color: #000;
+}
+#carousel-example-2 .carousel-caption {
+  color: #fff;
+  padding-left: 200px;
+}
+#carousel-example-2 .item {
+  width: 900px;
+  height: 600px;
+}
+#carousel-example-2 .item:nth-child(1) {
+  background-color: #001F3F;
+}
+#carousel-example-2 .item:nth-child(2) {
+  background-color: #3D9970;
+}
+#carousel-example-2 .item:nth-child(3) {
+  background-color: #FF851B;
+}
+#carousel-example-2 .item:nth-child(4) {
+  background-color: #FF4136;
+}
+#carousel-example-2 .item:nth-child(5) {
+  background-color: #85144B;
+}
