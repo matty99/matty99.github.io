@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opaque by Martyna</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Opaque</h1>
+		<h2>Designs by Martyna Bocian</h2>
+	</header>
+	<section id="main"></section>
+
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src='jquery.zoom.js'></script>
+	<script type="text/javascript">
+		(function() {
+			var product = {
+				title: "Ring of Destiny",
+				description: "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them",
+				price: "$1,000,000.00",
+				images: ["images/1.jpg",
+				"images/2.jpg",
+				"images/3.jpg",
+				"images/4.jpg"]
+			};
+
+			var display = document.createElement("div");
+			display.className = "product-display";
+
+			var active = document.createElement("div");
+			active.className = "display-active";
+
+			var active_image = document.createElement("img");
+			active_image.setAttribute("src", product.images[0]);
+
+			active.appendChild(active_image);
+			display.appendChild(active);
+
+			var selection = document.createElement("div");
+			selection.className = "display-selection";
+			for (var i = 0; i < product.images.length; i++) {
+				var node = document.createElement("div");
+				node.className = "display-option";
+				node.setAttribute("data-index", i);
+
+				var img = document.createElement("img");
+				img.setAttribute("src", product.images[i]);
+				node.appendChild(img);
+
+				node.onmouseover= function () {
+					$('.display-active').trigger('zoom.destroy');
+					var index = this.getAttribute("data-index");
+					active_image.setAttribute("src", product.images[index]);
+					$(".display-active").zoom();
+				};
+
+				selection.appendChild(node);
+			};
+
+			display.appendChild(selection);
+
+			var product_description = document.createElement("div");
+			product_description.className = "product-description";
+
+			var title = document.createElement("h1");
+			title.appendChild(document.createTextNode(product.title));
+			product_description.appendChild(title);
+
+			var description = document.createElement("p");
+			description.appendChild(document.createTextNode(product.description));
+			product_description.appendChild(description);
+
+			var price = document.createElement("p");
+			price.appendChild(document.createTextNode(product.price));
+			product_description.appendChild(price);
+
+			display.appendChild(product_description);
+
+			document.getElementById("main").appendChild(display);
+			$(".display-active").zoom();
+		})();
+	</script>
+</body>
+</html>
