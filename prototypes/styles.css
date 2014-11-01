@@ -6,14 +6,6 @@
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
-@font-face {
-	font-family: 'Playfair Display';
-	font-style: normal;
-	font-weight: 400;
-	src: local('Playfair Display'), local('PlayfairDisplay-Regular'), url(http://fonts.gstatic.com/s/playfairdisplay/v10/2NBgzUtEeyB-Xtpr9bm1CdO0qTdV6nuJtpht7qyJcRU.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-
 header {
 	font-family: 'Poiret One';
 	text-transform: uppercase;
@@ -21,25 +13,29 @@ header {
 }
 
 header h1 {
-	font-size: 7em;
+	font-size: 6em;
 	font-weight: normal;
 	text-align: center;
-	margin: 0px;
+	margin: 0px 0px 20px 0px;
 }
 
-header h2 {
-	font-size: 1.5em;
-	font-weight: normal;
-	text-align: center;
-	margin: 0px;
+header h1 span {
+	display: inline-block;
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }
 
 section {
-	font-family: 'Playfair Display';
+	font-family: 'Poiret One';
 }
 
 .product-display {
-	width: 1200px;
+	width: 900px;
+	height: 500px;
 	margin: auto;
 }
 
@@ -59,7 +55,7 @@ section {
 
 .product-description {
 	float: left;
-	width: 500px;
+	width: 250px;
 	padding: 20px 40px;
 }
 

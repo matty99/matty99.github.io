@@ -6,8 +6,7 @@
 </head>
 <body>
 	<header>
-		<h1>Opaque</h1>
-		<h2>Designs by Martyna Bocian</h2>
+		<h1>Op<span>v</span>que</h1>
 	</header>
 	<section id="main"></section>
 
@@ -27,15 +26,6 @@
 
 			var display = document.createElement("div");
 			display.className = "product-display";
-
-			var active = document.createElement("div");
-			active.className = "display-active";
-
-			var active_image = document.createElement("img");
-			active_image.setAttribute("src", product.images[0]);
-
-			active.appendChild(active_image);
-			display.appendChild(active);
 
 			var selection = document.createElement("div");
 			selection.className = "display-selection";
@@ -59,6 +49,15 @@
 			};
 
 			display.appendChild(selection);
+
+			var active = document.createElement("div");
+			active.className = "display-active";
+
+			var active_image = document.createElement("img");
+			active_image.setAttribute("src", product.images[0]);
+
+			active.appendChild(active_image);
+			display.appendChild(active);
 
 			var product_description = document.createElement("div");
 			product_description.className = "product-description";
