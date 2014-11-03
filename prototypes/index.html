@@ -15,13 +15,14 @@
 	<script type="text/javascript">
 		(function() {
 			var product = {
-				title: "Ring of Destiny",
+				title: "Honey Brass Ring",
 				description: "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them",
-				price: "$1,000,000.00",
-				images: ["images/1.jpg",
-				"images/2.jpg",
-				"images/3.jpg",
-				"images/4.jpg"]
+				availability: "Only 1 available",
+				price: "$10.00",
+				images: ["images/products/ring/1.jpg",
+				"images/products/ring/2.jpg",
+				"images/products/ring/3.jpg",
+				"images/products/ring/4.jpg"]
 			};
 
 			var display = document.createElement("div");
@@ -66,13 +67,44 @@
 			title.appendChild(document.createTextNode(product.title));
 			product_description.appendChild(title);
 
+			product_description.appendChild(document.createElement("hr"));
+
 			var description = document.createElement("p");
 			description.appendChild(document.createTextNode(product.description));
 			product_description.appendChild(description);
 
+			var availability = document.createElement("p");
+			availability.appendChild(document.createTextNode(product.availability));
+			product_description.appendChild(availability);
+
 			var price = document.createElement("p");
 			price.appendChild(document.createTextNode(product.price));
 			product_description.appendChild(price);
+
+			var button = document.createElement("button");
+			button.setAttribute("class", "purchase")
+			button.appendChild(document.createTextNode("Add to basket"));
+			product_description.appendChild(button);
+
+			product_description.appendChild(document.createElement("br"));
+			product_description.appendChild(document.createElement("hr"));
+
+			product_description.appendChild(document.createTextNode("Connect with Opaque:"));
+			product_description.appendChild(document.createElement("br"));
+			product_description.appendChild(document.createElement("br"));
+
+			var span = document.createElement("span");
+			span.setAttribute("class", "icon-facebook")
+			product_description.appendChild(span);
+			var span = document.createElement("span");
+			span.setAttribute("class", "icon-twitter")
+			product_description.appendChild(span);
+			var span = document.createElement("span");
+			span.setAttribute("class", "icon-instagram")
+			product_description.appendChild(span);
+			var span = document.createElement("span");
+			span.setAttribute("class", "icon-pinterest")
+			product_description.appendChild(span);
 
 			display.appendChild(product_description);
 
