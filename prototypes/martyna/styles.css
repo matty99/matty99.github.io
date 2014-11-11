@@ -123,9 +123,17 @@ section {
 	width: 350px;
 	padding: 20px 40px;
 }
+.product-description h1 {
+	font-size: 1.5em;
+}
 
 .product-description p {
 	font-size: 1.1em;
+}
+
+hr {
+	width: 90%;
+	margin: auto;
 }
 
 img {
@@ -142,8 +150,8 @@ img {
 	cursor: pointer;
 	outline: none;
 	display: inline-block;
-	width: 160px;
-	height: 50px;
+	width: 140px;
+	height: 40px;
 	font-size: 10px;
 	background-color: transparent;
 	border: solid #000 2px;
@@ -151,8 +159,8 @@ img {
 }
 
 .btn.btn-small {
-	height: 30px;
-	width: 65px;
+	height: 25px;
+	width: 60px;
 	font-size: 9px;
 	font-weight: bold;
 }
