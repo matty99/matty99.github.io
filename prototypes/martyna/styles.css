@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot?-l0mrbf');
-	src:url('fonts/icomoon.eot?#iefix-l0mrbf') format('embedded-opentype'),
-	url('fonts/icomoon.woff?-l0mrbf') format('woff'),
-	url('fonts/icomoon.ttf?-l0mrbf') format('truetype'),
-	url('fonts/icomoon.svg?-l0mrbf#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?vyh2xc');
+	src:url('fonts/icomoon.eot?#iefixvyh2xc') format('embedded-opentype'),
+		url('fonts/icomoon.woff?vyh2xc') format('woff'),
+		url('fonts/icomoon.ttf?vyh2xc') format('truetype'),
+		url('fonts/icomoon.svg?vyh2xc#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -21,23 +21,18 @@
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-
-	color: #a3889c;
-	margin: 5px;
-	font-size: 20px;
-	cursor: pointer;
 }
 
-.icon-facebook:before {
+.icon-twitter:before {
 	content: "\e600";
 }
-.icon-instagram:before {
+.icon-facebook:before {
 	content: "\e601";
 }
-.icon-twitter:before {
+.icon-pinterest:before {
 	content: "\e602";
 }
-.icon-pinterest:before {
+.icon-mail:before {
 	content: "\e603";
 }
 
@@ -49,10 +44,13 @@
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
+html {
+	font-family: 'Poiret One';
+}
+
 header {
 	font-family: 'Poiret One';
 	text-transform: uppercase;
-	padding: 0px;
 }
 
 header h1 {
@@ -75,33 +73,57 @@ section {
 	font-family: 'Poiret One';
 }
 
+#main {
+	padding-top: 40px;
+}
+
+.sidebar-menu {
+	float: left;
+	padding-top: 40px;
+}
+.sidebar-menu ul {
+	list-style: none;
+}
+.sidebar-menu a {
+	color: #000;
+	text-decoration: none;
+	font-size: 1.5em;
+}
+.sidebar-menu a:hover {
+	text-decoration: underline;
+}
+
 .product-display {
-	width: 900px;
-	height: 500px;
 	margin: auto;
+	position: relative;
+	width: 400px;
+	height: 400px;
 }
 
 .display-active {
-	float: left;
 	width: 400px;
 	height: 400px;
-	margin-top: 40px;
 }
 
 .display-selection {
-	float: left;
-	margin-top: 40px;
-	padding-left: 50px;
+	position: absolute;
+	top: 0px;
+	left: -100px;
 }
 .display-option {
 	width: 100px;
 	height: 100px;
 }
-
 .product-description {
-	float: left;
-	width: 250px;
+	position: absolute;
+	top: 0px;
+	right: -430px;
+	width: 350px;
 	padding: 20px 40px;
+}
+
+.product-description p {
+	font-size: 1.2em;
 }
 
 img {
@@ -109,14 +131,26 @@ img {
 	height: 100%;
 }
 
-button.purchase {
+.center {
+	text-align: center;
+}
+
+.btn {
+	margin: auto;
 	cursor: pointer;
 	outline: none;
-	margin: auto;
-	display: block;
-	width: 200px;
+	display: inline-block;
+	width: 160px;
 	height: 50px;
+	font-size: 11px;
 	background-color: transparent;
 	border: solid #000 2px;
 	text-transform: uppercase;
+}
+
+.btn.btn-small {
+	height: 30px;
+	width: 64px;
+	font-size: 10px;
+	font-weight: bold;
 }

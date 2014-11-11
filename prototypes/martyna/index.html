@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Opaque by Martyna</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<body>
+		<header>
+			<h1>Op<span>v</span>que</h1>
+		</header>
+		<div class="sidebar-menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Jewellery</a></li>
+				<li><a href="#">Basket</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<section id="main">
+			<div class="product-display">
+				<div class="display-selection">
+					<div class="display-option" data-index="0">
+						<img src="images/products/ring/1.jpg">
+					</div>
+					<div class="display-option" data-index="1">
+						<img src="images/products/ring/2.jpg">
+					</div>
+					<div class="display-option" data-index="2">
+						<img src="images/products/ring/3.jpg">
+					</div>
+					<div class="display-option" data-index="3">
+						<img src="images/products/ring/4.jpg">
+					</div>
+				</div>
+				<div class="display-active">
+					<img src="images/products/ring/1.jpg">
+				</div>
+				<div class="product-description">
+					<h1>Honey Brass Ring</h1>
+					<hr>
+					<p>One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them</p>
+					<p>Only 1 available</p>
+					<p>$10.00</p>
+					<p class="center">
+					<button class="btn">Add to basket</button>
+					<button class="btn">Back to products</button>
+					</p>
+					<br>
+					<hr>
+					<br>
+					<button class="btn btn-small"><span class="icon-facebook"></span> Like</button>
+					<button class="btn btn-small"><span class="icon-facebook"></span> Share</button>
+					<button class="btn btn-small"><span class="icon-twitter"></span> Tweet</button>
+					<button class="btn btn-small"><span class="icon-pinterest"></span> Pin it</button>
+					<button class="btn btn-small"><span class="icon-mail"></span> Email</button>
+				</div>
+			</div>
+		</section>
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="jquery.zoom.js"></script>
+		<script type="text/javascript">
+			$(function () {
+				var data = ["images/products/ring/1.jpg",
+				"images/products/ring/2.jpg",
+				"images/products/ring/3.jpg",
+				"images/products/ring/4.jpg"];
+
+				$(".display-active").zoom();
+				$('.display-option').each(function (index, node) {
+					node.onmouseover = function () {
+						$('.display-active').trigger('zoom.destroy');
+						var index = $(this).attr("data-index");
+						$(".display-active img").attr("src", data[index]);
+						$(".display-active").zoom();
+					}
+				});
+			});
+		</script>
+	</body>
+	</html>
