@@ -84,10 +84,14 @@ section {
 .sidebar-menu ul {
 	list-style: none;
 }
+.sidebar-menu li {
+	margin: 10px 0px;
+}
 .sidebar-menu a {
+	text-transform: uppercase;
 	color: #000;
 	text-decoration: none;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 .sidebar-menu a:hover {
 	text-decoration: underline;
@@ -123,7 +127,7 @@ section {
 }
 
 .product-description p {
-	font-size: 1.2em;
+	font-size: 1.1em;
 }
 
 img {
@@ -142,7 +146,7 @@ img {
 	display: inline-block;
 	width: 160px;
 	height: 50px;
-	font-size: 11px;
+	font-size: 10px;
 	background-color: transparent;
 	border: solid #000 2px;
 	text-transform: uppercase;
@@ -150,7 +154,7 @@ img {
 
 .btn.btn-small {
 	height: 30px;
-	width: 64px;
-	font-size: 10px;
+	width: 65px;
+	font-size: 9px;
 	font-weight: bold;
 }
