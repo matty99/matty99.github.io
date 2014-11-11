@@ -120,19 +120,16 @@ section {
 }
 .product-description {
 	float: left;
-	width: 350px;
+	width: 340px;
 	padding: 20px 40px;
 }
 .product-description h1 {
 	font-size: 1.5em;
+	text-transform: uppercase;
 }
 
 .product-description p {
 	font-size: 1.1em;
-}
-
-hr {
-	width: 90%;
 }
 
 img {
