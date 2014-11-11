@@ -100,13 +100,13 @@ section {
 .product-display {
 	margin: auto;
 	position: relative;
-	width: 400px;
-	height: 400px;
+	width: 500px;
+	height: 500px;
 }
 
 .display-active {
-	width: 400px;
-	height: 400px;
+	width: 500px;
+	height: 500px;
 }
 
 .display-selection {
@@ -115,8 +115,8 @@ section {
 	left: -100px;
 }
 .display-option {
-	width: 100px;
-	height: 100px;
+	width: 125px;
+	height: 125px;
 }
 .product-description {
 	position: absolute;
