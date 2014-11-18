@@ -1,5 +1,5 @@
 /** Typography **/
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400);
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 /** Globals **/
@@ -22,14 +22,31 @@ ul {
 /** Components **/
 .page {
 	position: relative;
-	background-size: 100% 100%;
 	width: 100%;
+	min-width: 960px;
+	height: 620px;
+}
+.parallax {
+    background-attachment: fixed;
+    background-size: auto 150%;
+    background-position: center;
 }
 .section {
 	position: relative;
+	width: 100%;
+	height: 520px;
+}
+.quarter {
+	position: relative;
 	background-size: 100% 100%;
 	width: 100%;
-	height: 100vh;
+	height: 100vw / 4;
+}
+.container {
+	position: relative;
+	margin: auto;
+	width: 960px;
+	height: 100%;
 }
 .column {
 	float: left;
@@ -59,37 +76,42 @@ ul {
 }
 
 /** Page Sections **/
-.navbar {
+header {
 	position: fixed;
 	z-index: 100;
 	top: 0px;
-	padding: 15px 10px;
-	background: #fff;
 	width: 100%;
-
-	.navbar-brand {
-		float: left;
-		width: 20%;
-		img { width: 100%; }
-	}
-	.navbar-menu {
-		float: left;
-		width: 80%;
-		margin: 0px;
-		padding: 0px;
-		text-align: center;
-	}
-	.nav-item {
-		display: inline-block;
-		text-transform: uppercase;
-		padding: 0.2em 0.4em;
-		a {
-			color: @darkblue;
-			font-size: 0.6em;
-			font-weight: bold;
-			text-decoration: none;
-			&:hover {
-				color: @lightblue;
+	background: #fff;
+	.navbar {
+		margin: auto;
+		width: 960px;
+		height: 68px;
+		.navbar-brand {
+			float: left;
+			width: 170px;
+			margin: 10px;
+			img { width: 100%; }
+		}
+		.navbar-menu {
+			float: left;
+			margin: 0px;
+			padding: 0px;
+			text-align: center;
+			margin: 26px 0px;
+			font-size: 16px;
+		}
+		.nav-item {
+			display: inline-block;
+			text-transform: uppercase;
+			padding: 3px 12px;
+			font-size: 16px;
+			a {
+				color: @darkblue;
+				font-weight: bold;
+				text-decoration: none;
+				&:hover {
+					color: @lightblue;
+				}
 			}
 		}
 	}
@@ -99,6 +121,7 @@ ul {
 	background-image: url('images/1.jpg');
 	color: @white;
 	text-align: center;
+	font-family: 'Roboto', sans-serif;
 	.hero {
 		width: 100%;
 	}
@@ -106,15 +129,15 @@ ul {
 		width: 70%;
 	}
 	.header {
-		margin: 0px;
-		font-size: 3.2em;
-		font-family: 'Roboto', sans-serif;
+		margin: 0em;
+		font-size: 5em;
+		line-height: 1em;
 		font-weight: 100;
 	}
 	.subheader {
-		margin: 0.5em;
-		font-size: 1.2em;
-		font-family: 'Roboto', sans-serif;
+		width: 80%;
+		margin: 2em auto 0em;
+		font-size: 1.8em;
 		font-weight: 300;
 	}
 }
@@ -131,7 +154,7 @@ ul {
 		color:  @darkblue;
 		text-align: center;
 		h1 {
-			font-size: 2em;
+			font-size: 3.8em;
 			padding-bottom: 0.5em;
 			text-transform: uppercase;
 			border-bottom: 0.125em solid @darkblue;
@@ -140,8 +163,8 @@ ul {
 		p {
 			margin: 0.15em auto 0.5em;
 			width: 75%;
-			font-size: 1.5em;
-			font-family: 'Roboto', sans-serif;
+			font-size: 2.5em;
+			font-family: 'Open Sans', sans-serif;
 			font-weight: 100;
 		}
 		img {
@@ -149,17 +172,35 @@ ul {
 			margin: auto;
 		}
 	}
+	.mvos {
+		margin: 0em 0.7em;
+		font-size: 1.9em;
+		text-align: center;
+		a {
+			text-transform: uppercase;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			&:nth-child(1) {
+				color: #26a88d;
+			}
+			&:nth-child(2) {
+				color: #50a6d9;
+			}
+			&:nth-child(3) {
+				color: #0d51aa;
+			}
+		}
+	}
 }
 
 .box {
 	background-color: @darkblue;
 	color: @white;
-	margin: 0.3em;
-	padding: 0.3em;
-	font-weight: normal;
-	font-size: 0.8em;
+	margin: 0em 1em;
+	padding: 0.8em;
+	font-size: 1.6em;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
+	font-weight: 300;
 	p { margin: 0em; }
 }
 
@@ -167,7 +208,7 @@ ul {
 	background-image: url('images/2.jpg');
 	color: @white;
 	h1 {
-		font-size: 3.6em;
+		font-size: 100px;
 		padding-bottom: 0.2em;
 		text-transform: uppercase;
 		border-bottom: 0.08em solid @white;
@@ -175,7 +216,7 @@ ul {
 	}
 	p {
 		margin: 0.15em auto 0.5em;
-		font-size: 1.2em;
+		font-size: 30px;
 		font-family: 'Roboto', sans-serif;
 		font-weight: 100;
 		text-transform: uppercase;
@@ -188,19 +229,17 @@ ul {
 
 .quote {
 	position: absolute;
-	top: 35%;
+	top: 30%;
 	color: @white;
-	padding: 0px 0.5em;
 	.quote-content {
 		margin: 0em auto;
 		text-align: center;
 		font-weight: bold;
-		font-size: 1.6em;
+		font-size: 50px;
 	}
 	.quote-author {
 		margin: 0em;
-		margin-right: 1.5em;
-		font-size: 1.2em;
+		font-size: 30px;
 		text-align: right;
 		font-style: italic;
 	}
@@ -243,12 +282,14 @@ ul {
 .vision {
 	background-image: url('images/5.jpg');
 	color: @black;
-	padding-top: 25%;
+	padding-top: 10%;
 	h1 {
 		width: 60%;
 		margin: 0em;
+		font-size: 1.8em;
 		text-align: center;
-		font-family: 'Roboto', sans-serif;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: bold;
 	}
 }
 .connect {
@@ -275,3 +316,8 @@ ul {
 		border: none;
 	}
 }
+
+// column
+// smaller menu
+// parallax
+// highlighting links?
