@@ -26,19 +26,22 @@ ul {
 	min-width: 960px;
 	height: 620px;
 }
-.parallax {
-    background-attachment: fixed;
-    background-size: auto 150%;
-    background-position: center;
+.bg-cover {
+	background-size: cover;
+	background-position: center;
+}
+.bg-fixed {
+	background-attachment: fixed;
 }
 .section {
 	position: relative;
 	width: 100%;
 	height: 520px;
-}
+}	
 .quarter {
 	position: relative;
-	background-size: 100% 100%;
+	background-size: cover;
+	background-position: center;
 	width: 100%;
 	height: 100vw / 4;
 }
@@ -173,22 +176,14 @@ header {
 		}
 	}
 	.mvos {
-		margin: 0em 0.7em;
-		font-size: 1.9em;
+		margin: 0.5em 0em;
+		font-size: 2.6em;
 		text-align: center;
 		a {
 			text-transform: uppercase;
 			font-family: 'Roboto', sans-serif;
 			font-weight: 700;
-			&:nth-child(1) {
-				color: #26a88d;
-			}
-			&:nth-child(2) {
-				color: #50a6d9;
-			}
-			&:nth-child(3) {
-				color: #0d51aa;
-			}
+			color: #26a88d;
 		}
 	}
 }
@@ -227,19 +222,32 @@ header {
 	background-image: url('images/3.jpg');
 }
 
+.happenings {
+	h1 {
+		color: @darkblue;
+		font-size: 80px;
+		margin: 0px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+}
+
 .quote {
 	position: absolute;
 	top: 30%;
 	color: @white;
 	.quote-content {
 		margin: 0em auto;
+		padding: 0em 1em;
 		text-align: center;
 		font-weight: bold;
-		font-size: 50px;
+		font-size: 2.8em;
 	}
 	.quote-author {
 		margin: 0em;
-		font-size: 30px;
+		padding-right: 2em;
+		font-size: 2em;
 		text-align: right;
 		font-style: italic;
 	}
@@ -255,7 +263,7 @@ header {
 		text-transform: uppercase;
 		text-align: center;
 		margin: 0em;
-		font-size: 1.8em;
+		font-size: 4.0em;
 		padding: 0.5em;
 	}
 	p {
@@ -263,21 +271,26 @@ header {
 		width: 80%;
 		text-align: center;
 		margin: 2em auto 0em;
-		font-size: 0.85em;
+		font-size: 1.4em;
 		opacity: 0.8;
 		line-height: 1.2em;
 		font-weight: bold;
 	}
 }
 .sponsor-row {
-	height: 120px;
-	font-size: 1em;
+	height: 200px;
+	width: 100%;
+	margin: auto;
 }
 .sponsor {
 	float: left;
 	width: 100% / 3;
 	height: 100%;
-	img { width: 100%; height: auto; max-height: 100%;}
+	img { 
+		width: 100%; 
+		height: auto; 
+		max-height: 100%;
+	}
 }
 .vision {
 	background-image: url('images/5.jpg');
@@ -292,32 +305,111 @@ header {
 		font-weight: bold;
 	}
 }
+.team-intro {
+	padding: 30px 0px;
+	height: 180px;
+	.title {
+		float: left;
+		width: 30%;
+		h1 {
+			margin: 0px;
+			color: @darkblue;
+			font-size: 60px;
+			text-transform: uppercase;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			em {
+				font-style: normal;
+				color: @teal;
+			}
+		}
+	}
+	.description {
+		float: left;
+		width: 70%
+	}
+	p {
+		font-family: 'Open Sans', sans-serif;
+		margin: 0px;
+		font-size: 16px;
+		padding: 20px 40px;
+	}
+}
+
+.team {
+	.member {
+		float: left;
+		width: 25%;
+		margin-bottom: 30px;
+		text-align: center;
+		img {
+			width: 90%;
+		}
+		h4 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: bolder;
+			text-align: center;
+		}
+		p {
+			text-align: left;
+			padding: 0px 10px;
+			font-size: 12px;
+		}
+	}
+}
+
 .connect {
+	clear: both;
 	background: @darkblue;
 	color: @white;
+	height: 450px;
 	h1 {
-		font-size: 2.5em;
+		font-size: 3.5em;
+		margin-bottom: 0px;
 		font-family: 'Roboto', sans-serif;
 		text-transform: uppercase;
 	}
 	p {
 		font-family: 'Open Sans', sans-serif;
-		font-size: 0.85em;
 		opacity: 0.8;
 		font-weight: bold;
 	}
 }
 
-.contact-form {
-	input {
-		width: 80%;
-	}
-	fieldset {
-		border: none;
+.social {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	.icon {
+		display: inline-block;
+		height: 80px;
+		margin: 0px;
+		img {
+			height: 100%;
+		}
 	}
 }
 
-// column
-// smaller menu
-// parallax
-// highlighting links?
+.contact-form {
+	margin-top: 50px;
+
+	label {
+		display: block;
+		font-size: 12px;
+		padding: 5px 0px;
+	}
+	input {
+		width: 80%;
+		padding: 5px;
+	}
+	textarea {
+		width: 82%;
+		height: 150px;
+		resize: none;
+	}
+	fieldset {
+		border: none;
+		margin: 0px;
+		padding: 0px;
+	}
+}
