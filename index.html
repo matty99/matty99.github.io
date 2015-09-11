@@ -1,210 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<head>
+		<title>Mateusz Bocian</title>
 
-	<title>Mateusz Bocian - Developer Profile</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="lib/rg-lightbox/rg-lightbox.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-</head>
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<div id="sidebar" class="hidden-print" role="complementary">
-					<ul id="menu" class="nav nav-pills nav-stacked">
-						<li>
-							<div id="photo-container">
-								<img class="img-responsive img-thumbnail" src="images/mateusz.jpg">
-							</div>
-						</li>
-						<li><a class="btn btn-default" href="#about">About <span class="glyphicon glyphicon-user pull-right"></span></a></li>
-						<li><a class="btn btn-success" href="#projects">Projects <span class="glyphicon glyphicon-briefcase pull-right"></span></a></li>
-						<li><a class="btn btn-primary" href="#extras">Extras <span class="glyphicon glyphicon-star-empty pull-right"></span></a></li>
-						<li><a class="btn btn-warning" href="documents/Resume2014.pdf">Resume <span class="glyphicon glyphicon-paperclip pull-right"></span></a></li>
-						<li>
-							<a class="btn btn-danger" href="mailto:mateusz.bocian@mail.utoronto.ca">
-								Contact Me <span class="glyphicon glyphicon-envelope pull-right"></span>
-							</a>
-						</li>              
-					</ul>
+		<!--[if lt IE 9]>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<![endif]-->
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="styles/css/main.css">
+
+	</head>
+	<body>
+		<main class="content-wrapper">
+			<header>
+				<h1>Mateusz Bocian</h1>
+				<p class="summary">A full stack web engineer with experience using a wide variety of tools to contribute to production sites of varying scale in agency, team, and individual professional settings.</p>
+			</header>
+			<section class="position grid-container">
+				<div class="grid-1">
+					<figure class="company-logo">
+						<img src="images/workopolis.png">
+					</figure>
 				</div>
-			</div>
-			<div id="content" class="col-md-8" role="main">
-				<div id="about">
-					<h1>About Me</h1>
-					<p>
-						That's me over there on the right, your left. Well, it's not really me, it's a picture of me. 
-						I'm not sure I had to mention that as it is a website about me and things that I have done. 
-						It would be odd if I built an entire site and then used someone else's picture. 
-					</p>
-					<p>
-						Anyways, I'm finishing up a Computer Science degree at the University of Toronto and I've become that guy. 
-						The guy that people talk to when: their computer is slow, when they need any web-related help, when the campus wi-fi stops working, when they forget their netflix password, when their vaccuum or dryer isn't working....you get the idea.
-						When I was 13 I learned HTML and CSS, and built my first static website.
-						Since then I have been fiddling with websites and I really got into web development in university.
-						Soon after I was making the website for the orientation week, then redesigning the student council site, and now I'm attempting to freelance.
-					</p>
+				<div class="position-description grid-3">
+					<h2 class="position-title">Workopolis - Application Developer</h2>
+					<time>January 2015 - June 2015</time>
+					<p>Workopolis is one of Canada's largest and most popular job boards. They also produce work related content daily on a blog that gets more than a million views a month. It is a critical component in maintaining their online presence. You can <a href="http://www.workopolis.com/content/advice/">view the blog here</a>.</p>
+					<p><i>Wordpress, PHP, Javascript, MySQL, HTML, SASS, Gulp</i></p>
+					<p>Performed a back end migration, and a complete overhaul of all the themes and plugins, while maintaining SEO rankings and social share counts, relieving a very large amount of technical debt, and unblocking projects in both software and marketing departments.</p>
 				</div>
-				<hr>
-				<div id="projects">
-					<h1>Projects</h1>
-
-					<h3>Current Projects</h3>
-					
-					<h4>Developer Profile</h4>
-					<p>You're looking at it. That's right, this site. Built with Bootstrap, so it's responsive. It's open source. It's ongoing.</p>
-					<br>
-
-					<h4>jShuffle</h4>
-					<p>
-						I've finally found my way of connecting with the open source world. 
-						JShuffle will be a responsive animation/game using CSS3 for animations. I welcome you to <a href="https://github.com/matty99/jShuffle">follow my progress!</a>
-					</p>
-					<br>
-					<h4>Stock Target Prices</h4>
-					<p>
-						A web startup that a friend of mine started that aggregates financial projections of analysts. 
-						In the early stages of the project I worked with the Python tool in charge of database control. 
-						The project was recently migrated to Django
-					</p>
-					<p>Currently I'm completely redesigning the front end and should be live sometime in February. <a href="http://stocktargetprices.com/">Stay tuned!</a></p>
-					<br>
-					<h4>The Chemistry Experiment</h4>
-					<p>
-						This is the project I'm most excited to see flourish. It is going to be an open source Python project that will simulate interactions between atoms. 
-						It's gotten so wild that I've begun exploring quantum physics. 
-						I'm still in the planning and research stage but when I finally start coding you'll be able to watch it on <a href="https://github.com/matty99/">my github.</a>
-					</p>
-					<br>
-					<h4>Orientation 2014</h4>
-					<p>
-						I worked on the past 3 orientation sites so chances are they want me to do this one as well. 
-						I need to ensure that I'm learning something new in the process, otherwise the task will just be muscle memory. 
-						My goal would be to use <a href="https://www.djangoproject.com/">Django</a> or <a href="http://angularjs.org/">Angular.js</a> to better organize myself and of course <a href="https://stripe.com/ca">Stripe</a> to manage payments.
-					</p>
-					<br>
-					<h3>Past Projects</h2>
-						<h4>University College Orientation (2013)</h4>
-						<p>
-							My third effort at the orientation website. 
-							Once again I had someone from the frosh week team helping me with the design but worked alone on everything else. 
-							Continued to use HTML, CSS, and jQuery for the front end, and PHP, MySQL for the back end.
-							I upgraded the registration and payment process to use Stripe instead of Paypal which allowed for a much simpler sign up process. 
-							Online registration brought in about 650 applicants, summing to over $50,000 in gross income. 
-							Half way through the summer I had to migrate the project to a designated server while continueing to accept online payments. 
-							Naturally, there was tons of testing involved in this process. 
-							The site is still live so feel free to <a href="http://www.ucorientation.com">poke around.</a>
-						</p>
-						<a data-lightbox href="images/orientation2013.png">
-							<img class="img-responsive img-thumbnail" src="images/orientation2013.png">
-						</a>
-						<br>
-						<br>
-						<h4>Ray Tracer (CSC418 2013)</h4>
-						<p>
-							Worked with a partner to develop a C++/OpenGL ray tracer for a class project. 
-							Throughout the semester we were introduced to advanced computer graphic techniques to produce the best possible 3-d computer generated scenes. 
-							For the final project we had to implement all the algorithms we learned and produce our own custom scenes.
-							Below is a sample generated image from our final product.
-						</p>
-						<a data-lightbox href="images/raytracer.bmp">
-							<img class="img-responsive img-thumbnail" src="images/raytracer.bmp">
-						</a>
-						<br>
-						<h4>University College Orientation (2012)</h4>
-						<p>
-							My second effort at the orientation site. This time I worked with an artist to design the front-end, but besides that I worked alone. 
-							The applicants filled out a custom form integrated with Paypal which was linked to a MySQL database. 
-							Successfully registered over 500 applicants online, bringing in over $40,000 for the frosh week team.
-							<br><br>
-							<a data-lightbox href="images/orientation2012.png">
-								<img class="img-responsive img-thumbnail" src="images/orientation2012.png">
-							</a>
-						</p>
-						<br>
-						<h4>Toronto Tennis Camp (2012)</h4>
-						<p>
-							I had a month to fix up a summer camp website and update the content.
-							There were frequent conversations with my supervisor to ensure the content was modified quickly and precisely to their liking. 
-							During this project I focused on site search engine optimization (SEO) and page load times.
-							<br><br>
-							<a data-lightbox href="images/torontotenniscamp2012.png">
-								<img class="img-responsive img-thumbnail" src="images/torontotenniscamp2012.png">
-							</a>
-						</p>
-						<br>
-						<h4>Search Engine (2012)</h4>
-						<p>
-							Worked in a team of five to develop a request for proposal (RFP) search engine that was hosted live on a free public web server. 
-							The crawler portion of the search engine was written in Java and it prepared the database entries. 
-							The web portion used PHP and MySQL to provide search results based on keywords found within the documents.
-							For the project we used a scrum-like development cycle within our team to ensure efficiency and coordination.
-						</p>
-						<br>
-						<h4>University College Orientation (2011)</h4>
-						<p>
-							This is my first ever live website. I designed the site on my own with the use of HTML, CSS, and Photoshop.
-							It contained information for incoming first-years about the events taking place during the first week of school as well as registration information. 
-							Through this work I got my first exposure to managing a server and working with clients to keep site content up to date.
-						</p>
-						<a data-lightbox href="images/orientation2011.png">
-							<img class="img-responsive img-thumbnail" src="images/orientation2011.png">
-						</a>
-					</div>
-					<hr>
-					<div id="extras">
-						<h1>Extras</h1>
-						<p>
-							I love to laugh. As I browse the web I save any cool or funny pictures I find. 
-							Here are some of my favourite comic strips and images.
-						</p>
-						<div id="comics">
-							<a data-lightbox href="images/im0.jpg">
-								<img class="img-responsive img-thumbnail" src="images/im0.jpg">
-							</a>
-							<a data-lightbox href="images/im1.jpg">
-								<img class="img-responsive img-thumbnail" src="images/im1.jpg">
-							</a>
-							<a data-lightbox href="images/im2.jpg">
-								<img class="img-responsive img-thumbnail" src="images/im2.jpg">
-							</a>
-							<a data-lightbox href="images/im3.jpg">
-								<img class="img-responsive img-thumbnail" src="images/im3.jpg">
-							</a>
-							<a data-lightbox href="images/im4.jpg">
-								<img class="img-responsive img-thumbnail" src="images/im4.jpg">
-							</a>
-							<a data-lightbox href="images/im5.jpg">
-								<img class="img-responsive img-thumbnail" src="images/im5.jpg">
-							</a>
-							<a data-lightbox href="images/im6.jpg">
-								<img class="img-responsive img-thumbnail" src="images/im6.jpg">
-							</a>
-							<a data-lightbox href="images/im7.jpg">
-								<img class="img-responsive img-thumbnail" src="images/im7.jpg">
-							</a>
-							<a data-lightbox href="images/im8.jpg">
-								<img class="img-responsive img-thumbnail" src="images/im8.jpg">
-							</a>
-						</div>
-					</div>
+			</section>
+			<section class="position grid-container">
+				<div class="grid-1">
+					<figure class="company-logo">
+						<img src="images/nthgen.png">
+					</figure>
 				</div>
-			</div>
-		</div>
-
-		<!-- jQuery -->
-		<script src="lib/jquery/jquery.min.js"></script>
-		<!-- Lightbox Dependencies -->
-		<script src="lib/rg-lightbox/spin.js"></script>
-		<script src="lib/rg-lightbox/rg-lightbox.js"></script>
-		<!-- Bootstrap Dependencies -->
-		<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
-		<!-- Custom Javascript -->
-		<script src="js/main.js"></script>
+				<div class="position-description grid-3">
+					<h2 class="position-title">NthGen Software Inc. - Front End Developer</h2>
+					<time>May 2014 - September 2014</time>
+					<p>NthGen Software is a digital solutions agency with clients across Canada. They have an in house web/mobile application called TradeRev which assists the running of used car auctions all over North America.</p>
+					<p><i>Grails/Groovy, Javascript, AWS, HTML, LESS, Grunt</i></p>
+					<p>Independently rebuilt a static, cross-browser compatible, responsive website following a complex design created by two designers to freshen up the look of the company for new potential clients and hires. It is hosted at <a href="http://www.nthgensoftware.com/">nthgensoftware.com</a></p>
+					<p>Since making the site I have learned a lot about web development and I could do it again better. When I have some time, I intend to write a blog post walking through optimizing this site and dropping the load time significantly.</p>
+				</div>
+			</section>
+			<section class="position grid-container">
+				<div class="grid-1">
+					<figure class="company-logo">
+						<img src="images/stp.png">
+					</figure>
+				</div>
+				<div class="position-description grid-3">
+					<h2 class="position-title">StockTargetPrices - Developer/Designer</h2>
+					<time>May 2013 - ongoing</time>
+					<p><a href="http://www.stocktargetprices.com/">Stocktargetprices.com</a> is an application that aggregates financial projections of nearly 500 analysts covering over 5000 companies and presents them to users.</p>
+					<p><i>Django, HTML, Javascript, Gulp, Paypal, AWS, Google Analytics</i></p>
+					<p>Redesigned and rebranded the application to improve the design and layout. I even made business cards to go with the new look!</p>
+					<p>The site is a work in progress and I tinker away at it whenever I feel as though something needs tweaking. At the moment my focuses are automating data retrieval and raising premium conversion rates.</p>
+				</div>
+			</section>
+			<section class="position grid-container">
+				<div class="grid-1">
+					<figure class="company-logo">
+						<img src="images/uclit.png">
+					</figure>
+				</div>
+				<div class="position-description grid-3">
+					<h2 class="position-title">University College Literary &amp; Athletic Society - Web Coordinator</h2>
+					<time>March 2011 - June 2014</time>
+					<p>As a student government at the University of Toronto, their website, <a href="http://uclit.ca/">uclit.ca</a>, keeps students notified of upcoming events and programs, as well as work positions available on campus.</p>
+					<p><i>Wordpress, PHP, Javascript, MySQL, Stripe, Paypal, HTML, CSS</i></p>
+					<p>Designed and developed a responsive Wordpress theme from scratch based on site analytics, with help from a graphic designer, improving site usability and organization workflow.</p>
+					<p>Built and managed the orientation week website and registration tools 4 years in a row bringing in over 2000 online applications and processing over $160,000 in registration fees. Online registration became the main method of registering for the event and replaced mailed checks and most in-person payments.</p>
+				</div>
+			</section>
+			<section class="position grid-container">
+				<div class="grid-1">
+					<figure class="company-logo">
+						<img src="images/littleguygames.png">
+					</figure>
+				</div>
+				<div class="position-description grid-3">
+					<h2 class="position-title">Little Guy Games - Game Programming Intern</h2>
+					<time>May 2013 - September 2013</time>
+					<p>An independent game studio focused predominantly on mobile, and tablet games.</p>
+					<p><i>Unity, C++, Javascript, PHP</i></p>
+					<p>Optimized and sanitized database queries to improve client side load times and application security of a web-based game.</p>
+					<p>Worked in a small team to rapidly re-prototype a game over the course of a month based on a new concept that a designer and I worked together to come up with.</p>
+					<p>Frequently play tested to ensure game balance (by far the best part of the day). Despite being an intern I had a lot of say in the direction of the game component I was working on. After each play test we would discuss how to make the game more fun and easier to learn.</p>
+				</div>
+			</section>
+			<section class="position grid-container">
+				<div class="grid-1">
+					<figure class="company-logo">
+						<img src="images/scholarsportal.png">
+					</figure>
+				</div>
+				<div class="position-description grid-3">
+					<h2 class="position-title">Scholars Portal - Programming/Systems Intern</h2>
+					<time>May 2011 - May 2013</time>
+					<p>Scholars Portal provides a number of services to university libraries across Canada including a search platform for scholarly journals, and archived books.</p>
+					<p><i>PHP, Java, Shell</i></p>
+					<p>Developed tools that allowed for the automated loading, and modifying of content to streamline the workflow of daily operations.</p>
+					<p>Created database management and deployment tools that allowed growth from 2 to over 40 active school accounts.</p>
+				</div>
+			</section>
+			<footer>
+				<h1>Want me on your team?</h1>
+				<h3>I would love to hear from you!</h3>
+				<a href="mailto:mateusz.bocian@mail.utoronto.ca" class="button">Email me!</a>
+			</footer>
+		</main>
 	</body>
-	</html>
+</html>
