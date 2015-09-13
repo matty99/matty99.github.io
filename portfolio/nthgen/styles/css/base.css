@@ -1,16 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500);
-html,
 body {
-  margin: 0px;
-  padding: 0px;
-  background-color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+.transparent {
+  opacity: 0;
 }
 .row {
   margin: 0px;
   width: 100%;
-}
-.transparent {
-  opacity: 0;
 }
 #top-nav {
   border: none;
@@ -56,7 +53,6 @@ body {
   margin-top: 50px;
 }
 #top-nav #top-nav-collapse .navbar-right div .top-nav-link {
-  font-family: 'Roboto-Light', sans-serif;
   display: inline-block;
   font-size: 18px;
   padding: 10px;
@@ -131,7 +127,7 @@ body {
 }
 .diagonal .line {
   float: left;
-  font-family: 'Roboto-Thin', sans-serif;
+  font-weight: 100;
   height: 70px;
   font-size: 70px;
   line-height: 70px;
@@ -145,7 +141,6 @@ body {
 }
 .diagonal .words {
   float: left;
-  font-family: 'Roboto-Light', sans-serif;
   font-size: 20px;
   line-height: 20px;
   text-align: left;

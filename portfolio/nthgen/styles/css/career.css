@@ -35,7 +35,6 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  font-family: 'Roboto-Light', sans-serif;
   vertical-align: middle;
   font-size: 40px;
   letter-spacing: 10px;
@@ -103,20 +102,17 @@
 }
 #page #sidebar .wrapper .side-panel h4 {
   padding-left: 2px;
-  font-family: 'Roboto-Light', sans-serif;
   text-transform: uppercase;
   font-size: 15px;
   line-height: 15px;
   margin: 0px;
 }
 #page #sidebar .wrapper .side-panel h1 {
-  font-family: 'Roboto-Regular', sans-serif;
   text-transform: uppercase;
   color: #0067c6;
   margin: 0px;
 }
 #page #sidebar .wrapper .side-panel h2 {
-  font-family: 'Roboto-Light', sans-serif;
   color: #0096ff;
   font-size: 18px;
 }
@@ -125,7 +121,6 @@
   padding: 0px;
 }
 #page #sidebar .wrapper .side-panel ul li {
-  font-family: 'Roboto-Light', sans-serif;
   padding: 5px 0px;
   padding-left: 1.8em;
   color: #000;
@@ -147,17 +142,14 @@
   /* Custom Carousel */
 }
 .post h1 {
-  font-family: 'Roboto-Regular', sans-serif;
   margin-top: 0px;
   padding: 5px;
   color: #0067c6;
 }
 .post p {
   padding: 5px;
-  font-family: 'Roboto-Light', sans-serif;
 }
 .post ul {
-  font-family: 'Roboto-Light', sans-serif;
   padding-left: 25px;
 }
 .post ul li {
@@ -167,7 +159,6 @@
   background-color: #0067c6;
   color: #fff;
   border-radius: 10px;
-  font-family: 'Roboto-Regular', sans-serif;
 }
 .post .btn:hover {
   background-color: #0096ff;
@@ -177,7 +168,6 @@
   font-size: 15px;
 }
 .post .post-header {
-  font-family: 'Roboto-Regular', sans-serif;
   font-size: 16px;
   font-weight: bolder;
 }
@@ -215,7 +205,6 @@
   margin-top: -25px;
 }
 .tag {
-  font-family: 'Roboto-Light', sans-serif;
   background-color: #333;
   color: #fff;
   padding: 2px 3px;
@@ -227,7 +216,6 @@
   margin: 0% -3%;
   width: 106%;
   height: 450px;
-  font-family: 'Roboto-Regular', sans-serif;
   color: #fff;
 }
 @media all and (max-width: 991px) {

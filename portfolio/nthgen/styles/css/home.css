@@ -31,7 +31,6 @@
   }
 }
 .dd-symbol-container p {
-  font-family: 'Roboto-Light', sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 26px;
@@ -89,7 +88,6 @@
   color: #fff;
   margin: auto;
   padding-left: 60px;
-  font-family: 'Roboto-Light', sans-serif;
   text-transform: uppercase;
   text-align: left;
   font-size: 60px;
@@ -141,6 +139,7 @@
     height: 50px;
   }
   .title .diagonal .diagonal-content .line {
+    font-weight: 100;
     font-size: 45px;
     margin-top: -18px;
   }
@@ -238,7 +237,6 @@
   background-size: cover;
 }
 #intro #split-screen #left-split #design h1 {
-  font-family: 'Roboto-Light', sans-serif;
   color: #fff;
   font-size: 4em;
   letter-spacing: 10px;
@@ -285,7 +283,6 @@
   background-size: cover;
 }
 #intro #split-screen #right-split #develop h1 {
-  font-family: 'Roboto-Light', sans-serif;
   color: #fff;
   font-size: 4em;
   letter-spacing: 10px;
@@ -470,7 +467,6 @@
 }
 #static-intro #split-screen #design h1,
 #static-intro #split-screen #develop h1 {
-  font-family: 'Roboto-Light', sans-serif;
   color: #fff;
   font-size: 4em;
   letter-spacing: 10px;
@@ -730,7 +726,6 @@
   margin: 0px;
 }
 .member-description .name {
-  font-family: 'Roboto-Light', sans-serif;
   font-size: 18px;
   line-height: 18px;
   color: #fff;
@@ -892,7 +887,6 @@
 #stats-container #stats .stat .stat-content div,
 #stats-container #stats .stat .stat-content h1 {
   display: inline-block;
-  font-family: 'Roboto-Light', sans-serif;
 }
 #stats-container #stats .stat .stat-content h1 {
   margin: 0px;
@@ -916,7 +910,7 @@
   }
 }
 #stats-container #stats .stat .stat-content .line {
-  font-family: 'Roboto-Thin', sans-serif;
+  font-weight: 100;
   height: 60px;
   font-size: 60px;
   line-height: 60px;
@@ -1282,7 +1276,6 @@
   height: 600px;
   overflow: hidden;
   background-color: #0060c9;
-  font-family: 'Roboto-Light', sans-serif;
   padding-top: 25px;
 }
 @media screen and (max-width: 1062px) {
