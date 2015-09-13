@@ -1,25 +1,3 @@
-google.maps.event.addDomListener(window, 'load', customize_map);
-function customize_map(){
-  var myOptions = {
-      zoom:17,
-      scrollwheel: false,
-      center:new google.maps.LatLng(43.763094, -79.406485),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
-  marker = new google.maps.Marker({
-      map: map,
-      position: new google.maps.LatLng(43.763094, -79.406485),
-      icon: 'images/nthgen-pin.png'
-  });
-  infowindow = new google.maps.InfoWindow({
-      content:"<b>NthGen Software Inc.</b><br/>90 Sheppard Ave. East Suite 601<br/>Toronto, On M2N 3A1"
-  });
-  google.maps.event.addListener(marker, "click", function(){
-      infowindow.open(map,marker);
-  });
-}
-
 // Create the squares in the first section of the page
 function create_square_background () {
   var num_columns = 20;
@@ -32,31 +10,33 @@ function create_square_background () {
 
   // Fade out logo in the squares
   setTimeout(function () {
-    $("#intro-cover header .square").eq(2 * num_columns - 3).css({"background-color":"transparent"});
-    $("#intro-cover header .square").eq(2 * num_columns - 2).css({"background-color":"transparent"});
-    $("#intro-cover header .square").eq(3 * num_columns - 2).css({"background-color":"transparent"});
+    var square_list = document.getElementsByClassName('square');
+    square_list[2 * num_columns - 3].style.backgroundColor = 'transparent';
+    square_list[2 * num_columns - 2].style.backgroundColor = 'transparent';
+    square_list[3 * num_columns - 2].style.backgroundColor = 'transparent';
   }, 2200);
 }
 
 function square_transition (progress) {
-    // var i = Math.floor(squareList.length * progress);
-
-    // if(i == 0) {
-    //   for (var i = squareList.length - 1; i >= 0; i--) {
-    //     squareList[i].css({"opacity":"1.0"});
-    //   };
-    // } else {
-    //   if(i < squareList.length) squareList[i].css({"opacity":"0.0"});
-    //   if(i < squareList.length - 1) squareList[i+1].css({"opacity":"0.1"});
-    //   if(i < squareList.length - 2) squareList[i+2].css({"opacity":"0.2"});
-    //   if(i < squareList.length - 3) squareList[i+3].css({"opacity":"0.3"});
-    //   if(i < squareList.length - 4) squareList[i+4].css({"opacity":"0.4"});
-    //   if(i < squareList.length - 5) squareList[i+5].css({"opacity":"0.5"});
-    //   if(i < squareList.length - 6) squareList[i+6].css({"opacity":"0.6"});
-    //   if(i < squareList.length - 7) squareList[i+7].css({"opacity":"0.7"});
-    //   if(i < squareList.length - 8) squareList[i+8].css({"opacity":"0.8"});
-    //   if(i < squareList.length - 9) squareList[i+9].css({"opacity":"0.9"});
-    // }
+    var i;
+    var square_list = document.getElementsByClassName('square');
+    if (progress == 0) {
+      for (i = 0; i < square_list.length; i++) {
+        square_list[i].style.opacity = 1.0;
+      }
+    } else {
+      i = Math.floor(square_list.length * progress);
+      if (i < square_list.length) square_list[i].style.opacity = 0.0;
+      if (i < square_list.length - 1) square_list[i+1].style.opacity = 0.1;
+      if (i < square_list.length - 2) square_list[i+2].style.opacity = 0.2;
+      if (i < square_list.length - 3) square_list[i+3].style.opacity = 0.3;
+      if (i < square_list.length - 4) square_list[i+4].style.opacity = 0.4;
+      if (i < square_list.length - 5) square_list[i+5].style.opacity = 0.5;
+      if (i < square_list.length - 6) square_list[i+6].style.opacity = 0.6;
+      if (i < square_list.length - 7) square_list[i+7].style.opacity = 0.7;
+      if (i < square_list.length - 8) square_list[i+8].style.opacity = 0.8;
+      if (i < square_list.length - 9) square_list[i+9].style.opacity = 0.9;
+    }
 }
 
 // Scrolling header
@@ -167,7 +147,7 @@ var introductionPlayed = false;
 // Play Header Animations
 function playIntroduction(element) {
   // Wrap each letter in a span for header Animations
-  if(element.find("h1 span").length == 0) {
+  if (element.find("h1 span").length == 0) {
     element.find("h1").each(function (index, value) {
       var text = $(this).html();
       $(this).html(text.replace(/(.)/g, "<span style=\"color:transparent;\">$1</span>"));
@@ -233,7 +213,7 @@ function swapIntroText(firstSection) {
     });
   }
 
-  if(introductionPlayed) {
+  if (introductionPlayed) {
     typeOutIntroduction($("#intro>.title"));
     typeOutIntroduction($("#right-split .title"));
     typeOutIntroduction($("#left-split .title"));
@@ -245,7 +225,7 @@ function ddTypeOut(elements, progress) {
   var target = Math.floor(elements.length * progress);
 
   for (var i = 0; i < elements.length; i++) {
-    if(i < target) {
+    if (i < target) {
       elements.eq(i).css({"background-color":"transparent", "color":"#fff"});
     } else if (i > target) {
       elements.eq(i).css({"background-color":"transparent", "color":"transparent"});
@@ -271,7 +251,7 @@ function ddEnterTransition (element, spinDirection) {
     .addTo(controller)
     .on("progress", function (e) {
       ddTypeOut(element.find("h1 span"), e.progress);
-      if(e.state == "BEFORE")
+      if (e.state == "BEFORE")
         element.find("h1 span").eq(0).css({"background-color":"transparent", "color":"transparent"});
     }));
 
@@ -335,13 +315,13 @@ function ddLeaveTransition(element) {
     .setTween(timeline)
     .addTo(controller)
     .on("leave", function (e) {
-      if(e.state == "BEFORE") {
+      if (e.state == "BEFORE") {
         $("#design h1").css({opacity: "1"});
         $("#develop h1").css({opacity: "1"});
         $("#design p").css({opacity: "1"});
         $("#develop p").css({opacity: "1"});
       }
-      if(e.state == "AFTER") {
+      if (e.state == "AFTER") {
         $("#design h1").css({opacity: "0"});
         $("#develop h1").css({opacity: "0"});
         $("#design p").css({opacity: "0"});
@@ -377,7 +357,7 @@ function IntroductionScenes() {
       $("#right-split .title").css({"opacity": 0});
     })
     .on("leave", function (e) {
-      if(e.state == "AFTER") {
+      if (e.state == "AFTER") {
         $("#right-split .title").css({"opacity": 1});
         $("#intro>.title").css({"opacity": 0});
       } 
@@ -387,12 +367,12 @@ function IntroductionScenes() {
   intro3 = new ScrollScene({duration: wh})
     .addTo(controller)
     .on("start", function (e) {
-      if(e.state == "BEFORE") {
+      if (e.state == "BEFORE") {
         swapIntroText(true);
       }
     })
     .on("leave", function (e) {
-      if(e.state == "AFTER") {
+      if (e.state == "AFTER") {
         swapIntroText(false);
       }
     });
@@ -415,7 +395,7 @@ function IntroductionScenes() {
       $("#left-split").css({"opacity": 0});
     })
     .on("leave", function (e) {
-      if(e.state == "AFTER") {
+      if (e.state == "AFTER") {
         $("#left-split").css({"opacity": 1});
         document.getElementById("intro-video-right").pause();
         if (document.getElementById("intro-video-left").duration) {
@@ -478,7 +458,7 @@ function IntroductionScenes() {
       $("#left-split").css({"opacity": 1});
     })
     .on("leave", function (e) {
-      if(e.state == "BEFORE") {
+      if (e.state == "BEFORE") {
         $("#left-split").css({"opacity": 0});
       } 
     });
@@ -501,7 +481,7 @@ statValues.push(391 + (1 * Math.floor(daysSince/14)));
 
 $(window).on('scroll', function (){
   $("#stats .stat").each(function (index) {
-    if($(this).offset().top <= document.body.scrollTop + (wh * 0.5) && !$(this).hasClass("counted")) {
+    if ($(this).offset().top <= document.body.scrollTop + (wh * 0.5) && !$(this).hasClass("counted")) {
       var i = 0;
       $(this).addClass("counted")
       var counting = setInterval(function () {
@@ -578,7 +558,7 @@ function carouselScene() {
   });
 
   // Disable mobile carousel on higher resolutions
-  if($(window).width() <= 1049) {
+  if ($(window).width() <= 1049) {
     staffController.enabled(true);
   } else {
     staffController.enabled(false);
@@ -663,7 +643,7 @@ function ResizeIntroductionVideos() {
 
   var vw = ww;
   var vh = (ww * 9) / 16;
-  if(vh < wh){
+  if (vh < wh){
     vh = wh;
     vw = (vh / 9) * 16;
   }
@@ -675,7 +655,7 @@ function ResizeIntroductionVideos() {
   vh = wh + 5;
   vw = (vh / 0.875);
 
-  if(vw < ww / 2) {
+  if (vw < ww / 2) {
       vw = ww / 2 + 5;
       vh = (vw * 0.875);
   }
@@ -762,7 +742,7 @@ $(window).resize(function () {
   }
 
   // Disable mobile carousel on higher resolutions
-  if($(window).width() <= 1049) {
+  if ($(window).width() <= 1049) {
       staffController.enabled(true);
       for (var i = staff1.length - 1; i >= 0; i--) {
         staff1[i].offset(-ww + 200);
@@ -782,4 +762,24 @@ $(window).resize(function () {
 
 });
 
-$('html,body').scrollTop(0);
+google.maps.event.addDomListener(window, 'load', customize_map);
+function customize_map(){
+  var myOptions = {
+      zoom:17,
+      scrollwheel: false,
+      center:new google.maps.LatLng(43.763094, -79.406485),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+  marker = new google.maps.Marker({
+      map: map,
+      position: new google.maps.LatLng(43.763094, -79.406485),
+      icon: 'images/nthgen-pin.png'
+  });
+  infowindow = new google.maps.InfoWindow({
+      content:"<b>NthGen Software Inc.</b><br/>90 Sheppard Ave. East Suite 601<br/>Toronto, On M2N 3A1"
+  });
+  google.maps.event.addListener(marker, "click", function(){
+      infowindow.open(map,marker);
+  });
+}
