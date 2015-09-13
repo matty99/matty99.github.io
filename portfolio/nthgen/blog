@@ -1,0 +1,95 @@
+The decision to not go with a server
+- Huge unecessary handicap. It was to save money, but it could've just shared a server with another app, it didn't need a dedicated server.
+
+The contact form
+- There was a decision made to not have a server, and simply build the site in aws buckets. The contact form submission was hacked in.
+- It would literally be 1 php file to send an email
+
+Templates populated by ajax calls
+- Slows down initial load time
+- This is something that should be compiled as a partial on the server side, not hacked out on a static site in the browser
+- The reason to do this was in order to manage team members better. As people moved around or left they could be managed from one json file.
+- We shouldn't slow initial load time for this reason. Another reason to get a server.
+- Since I'm no longer using templates I can remove the dependency on the mustache templating engine
+
+Backwards compatability
+- You're building a new age site with videos and scroll events out the whazoo, you should
+- There is something really ugly about any sort of browser detection. 
+
+Bad square code
+- This was simply inexperience and lack of research. I didn't think about how much I was going to be impacting browser performance with this kind of code.
+
+function createHeaderSquares() {
+  var width = $("#intro-cover header").width() / NUM_HEADER_COLUMNS;
+  var numRows = Math.ceil(wh / width);
+
+  for (var i = 0; i < NUM_HEADER_COLUMNS * numRows; i++) {
+    var square = $("<div>", {class: "square"});
+    square.css({
+      "width" :  width + "px",
+      "height" :  width + "px",
+    });
+    $("#intro-cover header").append(square);
+    squareList.push(square);
+
+    numSquares++;
+  };
+
+  squareList = shuffle(squareList);
+}
+
+function resizeHeaderSquares() {
+    var width = $("#intro-cover header").width() / NUM_HEADER_COLUMNS;
+    var numRows = Math.ceil($("#intro-cover header").height() / width);
+
+    if (numSquares != (NUM_HEADER_COLUMNS * numRows)) {
+      for (var i = squareList.length - 1; i >= 0; i--) {
+        squareList[i].width(width).height(width);
+      };
+
+      while (numSquares < (NUM_HEADER_COLUMNS * numRows)) {
+        for (var i = 0; i < (NUM_HEADER_COLUMNS * numRows) - numSquares; i++) {
+          var square = $("<div>", {class: "square"});
+          square.css({
+            "width" :  width + "px",
+            "height" :  width + "px",
+          });
+
+          $("#intro-cover header").append(square);
+          squareList.push(square);
+          numSquares++;
+        }
+        squareList = shuffle(squareList);
+      }
+    }
+
+    setLogoSquaresBackground("transparent");
+}
+
+becomes...
+.square {
+    width: 5%;
+    float: left;
+    &:after {
+      content: '';
+      display: block;
+      padding-bottom: 100%;
+    }
+}
+
+
+Wait to load
+- Shouldn't be necessary. If anything it should be a loading screen.
+
+
+Bad meta tag:
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+Sometimes people need to zoom in. No reason to deny them the right. The site is responsive after all.
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+is sufficient
+
+bootstrap unecessarily
+
+absurd nesting with less
+
+You don't want to be sending mobile phones the video at all.
