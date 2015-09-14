@@ -581,14 +581,11 @@ function ContactForm() {
       "email": $("#form_email").attr("value"),
       "additionalInfo": $("#form_additional").attr("value")
     };
+  
+    setTimeout(function () { formSuccess(nlform); }, 1000);
 
   });
 };
-
-function contactFormResponse(object, nlform) {
-  if (object.response == 0) formFailed();
-  else formSuccess(nlform);
-}
 
 function formSuccess(nlform) {
   $("#contact-form .message-loading").hide(); // hide loading icon
@@ -605,16 +602,6 @@ function formSuccess(nlform) {
       }, 2000);
     });
   });
-}
-
-function formFailed() {
-  $("#contact-form .message-loading").fadeOut(0); // hide loading icon
-  $("#contact-form .message-fail").fadeIn(500); // show fail message
-  setTimeout(function () {
-    $("#contact-form .message-fail").fadeOut(1000, function () {
-      $("#form_submit").fadeIn(1000);
-    });
-  }, 2000);
 }
 
 /* Smooth Scrolling */
