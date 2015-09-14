@@ -12,131 +12,143 @@
 			<script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<![endif]-->
 
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/main.css">
+		<link rel="stylesheet" type="text/css" href="github.css">
+    <style type="text/css">
+    body {
+      line-height: 2em;
+    }
+    </style>
 	</head>
 	<body>
-
-This is a work in progress, the pages don't look the same yet.
-
-The decision to not go with a server
-- Huge unecessary handicap. It was to save money, but it could've just shared a server with another app, it didn't need a dedicated server.
-
-The contact form
-- There was a decision made to not have a server, and simply build the site in aws buckets. The contact form submission was hacked in.
-- It would literally be 1 php file to send an email
-
-Templates populated by ajax calls
-- Slows down initial load time
-- This is something that should be compiled as a partial on the server side, not hacked out on a static site in the browser
-- The reason to do this was in order to manage team members better. As people moved around or left they could be managed from one json file.
-- We shouldn't slow initial load time for this reason. Another reason to get a server.
-- Since I'm no longer using templates I can remove the dependency on the mustache templating engine
-
-Backwards compatability
-- You're building a new age site with videos and scroll events out the whazoo, you should
-- There is something really ugly about any sort of browser detection.
-
-Bad square code
-- This was simply inexperience and lack of research. I didn't think about how much I was going to be impacting browser performance with this kind of code.
-
-function createHeaderSquares() {
+    <main class="content-wrapper">
+      <header>
+        <a href="../">&laquo; Back to resume</a>
+        <h1>Website Optimization - Part 1</h1>
+        <h3>The act of scrutinizing and improving my old code</h3>
+      </header>
+      <section>
+        <h3>Introduction</h3>
+        <p>A year ago I was working as a Front End Developer at a company called NthGen Software Inc. and my first project was to redesign their website with their two designers. By the time I had gotten there the design was essentially finished, which, in hindsight, should have been a red flag for me. Wanting to impress and make a splash I tried to match the design pixel for pixel without considering load times, performance issues, and most importantly the user. This piece takes a look at all the code I wrote as an inexperienced developer, explains why I wrote it that way, and suggests improvements in hopes of learning a few lessons for future projects.</p>
+        <p>The site takes a long time to load, is slow, and when I show it off it reflects poorly on the work I am capable of doing. I'm writing this post because I approached the company in hopes that they would let me fix it but they were uninterested in the proposal. I wanted someone to benefit from these changes besides me, so hopefully someone will read this post and gain something from it.</p>
+        <p>I will be building up <a href="../portfolio/nthgen/">my version of the site</a> as I go along to reflect the improvements I suggest below.</p>
+      </section>
+      <section>
+        <h3>Build it static!</h3>
+        <p>The decision to not have a server for the site happened late in the project, but had the biggest impact on the site in how much bad code it generated as a result. The entire site was to be hosted in AWS Buckets instead of giving it a server. This was a huge and unecessary handicap to save a little bit of money on hosting. The difference between buckets and a medium instance is a significant sum of money, and the company has probably saved a lot of money with this decision. However, they could have saved even more since the site didn't need a dedicated server. They ran an app in house that had multiple servers and they could have just dropped it on one of those instead, making the site essentially free to host. The traffic from the one site would not affect the other in any significant way meaning they really had nothing to worry about.</p>
+        <p>For a lot of the project I accepted the decisions that were made higher up because I wasn't comfortable arguing with them about the correct choice. We've arrived at the root of the problem, me. I didn't stand up nearly strong enough for the necessity of server and as a result my project suffered. </p>
+        <p><b>Lesson learned:</b> As the engineer, it is your job to know what's best for your project and to stand up for that. You need to be open to suggestions, but in the end the decision needs to come from you.</p>
+      </section>
+      <section>
+        <h3>Contact form</h3>
+        <p>Welcome to the first consequence of not having a server. A contact form needs a server side file to send an email because browsers don't have a mail server baked in. On the server it needs as little as a single PHP file to do the job. How did we do this without a server? The correct response is something along the lines of JSONP or CORS, however it was decided that it would take too long to set these up. Instead we did something which I'm pretty sure is a security vulnerability. I didn't write the code on the server, nor do I have any idea how it works, so I cannot confirm or deny that it's a security vulnerability. This isn't a position you ever want to be in as an engineer. You either don't know it is a security vulnerability or you do know it's one and you patch it.</p>
+        <p><b>Lesson learned:</b> Be more reactive to bad smells in your code. If code feels ugly as you're writing it, you're probably doing it wrong. That growing feeling in the bottom of your stomach is your coding experience preparing your stomach to expel fluid.</p>
+      </section>
+      <section>
+        <h3>Make it CMS-like</h3>
+        <p>The staff section and job posts are hypothetically constantly changing, so they should be easy to change. The best way to do this is to generate a template partial on the server side based on a JSON file, cache it (so you only have to process it once in a while), and include the compiled page in your HTML file when you send it to the user. The way it was done was client side, meaning we lose the caching step and it slows down the initial load time of the site.</p>
+        <p>This is another consequence of not having a server, and trying to do too much within the static site constraints. The templates were populated by data from AJAX calls being pumped into Mustache templates. My version of the site doesn't need to generate templates on the client side, so I've removed code that supports that.</p>
+        <p><b>Lesson learned:</b> Don't sacrifice load time to try to make things easier for you to manage. The site is for the user after all.</p>
+      </section>
+      <section>
+        <h3>Backwards compatability</h3>
+        <p>By default I would be loading a page that said please update your browser. I used a browser detector called Bowser.js to find out if the user was using an old browser and if they weren't I would load the rest of the page.</p>
+        <p>The better way to do this is with feature detection with Modernizr.js (which I'm already using on the page). If the user doesn't have certain features, redirect them to a different page that tells the user to update their browser. That way, in the regular case the user starts loading the page right away instead of waiting on browser detection code to run.</p>
+        <p>There is something really ugly about any sort of browser detection, but until you can guarentee everyone is running an up-to-date browser you have to do some.</p>
+        <p><b>Lesson learned:</b> Don't try to combine two pages into one, especially in a static site.</p>
+      </section>
+      <section>
+        <h3>Wait to load</h3>
+        <p>Up until now I've been mostly been dealing with bad decisions I made as an engineer and their consequences. Now comes the funny stuff. Reasons why I was a bad coder.</p>
+        <p>I covered the screen with a black fixed full screen overlay and faded it out when the page had loaded. That means all videos and all images were now blocking the user from seeing the site. Videos can stream from the server and the site can start running without the video being completely loaded so there is no reason to do this.</p>
+        <p>The worst part was that there was no signal of what the website was doing. I would show the site to friends and they would say "It's just black" or they would be tempted to refresh the page. I would have to assure them, "Just wait for it! It's coming. I promise." I can only imagine the bounce rate the original site has experienced due to this poor code.</p>
+        <p>Since I've cut down on whole bunch of things that slow the loading of the page down, I no longer need any sort of loading page in my version of the site.</p>
+        <p><b>Lesson learned:</b> If you need a loading screen, make it very clear that it is a loading screen.</p>
+      </section>
+      <section>
+        <h3>Bad meta tag:</h3>
+        <p>In the header of the site you will find the following tag:</p>
+        <pre><code class="html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot;&gt;</code></pre>
+        <p>I've changed this to instead read:</p>        
+        <pre><code class="html">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;</code></pre>
+        <p>A responsive page shouldn't deny people the ability to zoom in, that is just silly. I will go a step futher. No site should deny users the ability to zoom in on content. There are tons of people out there with visual disabilities that can't view your site at regular zoom. Furthermore, if you've ever opened a site on your phone and not been able to read something, what would you do if you couldn't zoom in on it either? Think about how frustrating would that be. In my case, my site was already responsive so I had nothing to worry about.</p>
+        <p><b>Lesson learned:</b> Think of all your potential users.</p>
+      </section>
+      <section>
+        <h3>Bad square code</h3>
+        <p>I was generating lots of responsive squares using javascript. This was simply a case of inexperience and lack of research at the time. I didn't think about how much I was going to be impacting browser performance with this kind of code, but now I know.</p>
+        <pre><code class="javascript">function createHeaderSquares() {
   var width = $("#intro-cover header").width() / NUM_HEADER_COLUMNS;
   var numRows = Math.ceil(wh / width);
 
-  for (var i = 0; i < NUM_HEADER_COLUMNS * numRows; i++) {
-    var square = $("<div>", {class: "square"});
+  for (var i = 0; i &lt; NUM_HEADER_COLUMNS * numRows; i++) {
+    var square = $("&lt;div&gt;", {class: "square"});
     square.css({
       "width" :  width + "px",
       "height" :  width + "px",
     });
     $("#intro-cover header").append(square);
     squareList.push(square);
-
-    numSquares++;
-  };
-
-  squareList = shuffle(squareList);
-}
-
-function resizeHeaderSquares() {
-    var width = $("#intro-cover header").width() / NUM_HEADER_COLUMNS;
-    var numRows = Math.ceil($("#intro-cover header").height() / width);
-
-    if (numSquares != (NUM_HEADER_COLUMNS * numRows)) {
-      for (var i = squareList.length - 1; i >= 0; i--) {
-        squareList[i].width(width).height(width);
-      };
-
-      while (numSquares < (NUM_HEADER_COLUMNS * numRows)) {
-        for (var i = 0; i < (NUM_HEADER_COLUMNS * numRows) - numSquares; i++) {
-          var square = $("<div>", {class: "square"});
-          square.css({
-            "width" :  width + "px",
-            "height" :  width + "px",
-          });
-
-          $("#intro-cover header").append(square);
-          squareList.push(square);
-          numSquares++;
-        }
-        squareList = shuffle(squareList);
-      }
-    }
-
-    setLogoSquaresBackground("transparent");
-}
-
-becomes...
-.square {
-    width: 5%;
-    float: left;
-    &:after {
-      content: '';
-      display: block;
-      padding-bottom: 100%;
-    }
-}
-
-
-Wait to load
-- Shouldn't be necessary. If anything it should be a loading screen.
-
-
-Bad meta tag:
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-Sometimes people need to zoom in. No reason to deny them the right. The site is responsive after all.
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-is sufficient
-
-I'm using the bootstrap css unecessarily. I remember I was getting around to pulling it out but I got pulled off the task.
-
-absurd nesting with less
-
-You don't want to be sending mobile phones the video at all.
-
-Although cool, I don't think it's necessary to change the layout of the team section for mobile.
-
-Pixelation can use web workers, there is no need to block the main thread with that sort of work.
-
-I pulled out my trusty web dev timeline tool and started recording. I found that most of my computation spikes were generated by recalculating the page layout. 
-This is probably because I'm handling most of my responsive tasks in javascript.
-Make layout better, get a fast page. Simple as that.
-
-One idea for this was to use the 'vh' and 'vw' css units for the top sections.
-
-
-Just by doing these small changes I dropped the critical rendering path from
-
-Load time from ~5.25 seconds down to ~1.50 seconds
-123 Requests -> 92 Requests
-5.5 MB -> 4.1 MB
-
-Next Steps:
-Cleaning up LESS / CSS so you can actually read the damn thing
-- I will be leveraging mixins
-
-Moving Pixelation
-
+  }
+}</code></pre>
+      <p>Since the squares needed to be responsive I also needed to change them whenever the screen was resized.</p>
+      <pre><code class="javascript">function resizeHeaderSquares() {
+  var width = $("#intro-cover header").width() / NUM_HEADER_COLUMNS;
+  var numRows = Math.ceil($("#intro-cover header").height() / width);
+  for (var i = squareList.length - 1; i >= 0; i--) {
+    squareList[i].width(width).height(width);
+  }
+}</code></pre>
+      <p>This code would crash the browser on phones trying to run the site. If you rotated your screen to landscape you would have to restart the page, simple as that. There was also a bit of code that would add squares depending on if the height of the screen exceeded the width of the screen. I will deal with this in a later post.</p>
+      <p>Javascript to generate the squares is not a bad thing. It saves you a lot of code in your html file, and is quite elegant. The problem is the resizing. Any time you resize the screen you're doing a loop through at least 400 DOM objects and modifying their CSS. There is no reason to do this if you can do it in pure CSS instead. The work around is simple.</p>
+      <pre><code class="less">.square {
+  width: 5%;
+  float: left;
+  &amp;:after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+}</code></pre>
+      <p>...and the javascript...</p>
+      <pre><code class="javascript">function create_square_background () {
+  var num_columns = 20;
+  var num_rows = 20;
+  var i;
+  for (i = 0; i &lt; num_columns * num_rows; i++) {
+    var square = $("&lt;div&gt;", {class: "square"});
+    $("#intro-cover header").append(square);
+  }
+}</code></pre>
+        <p><b>Lesson learned:</b> Take the proper time to read and research every solution to the features you implement.</p>
+      </section>
+      <section>
+        <h3>Results (tl;dr)</h3>
+        <p>Just by being more critical of design decisions and making small javascript changes I was able to make a huge impact on load and running time of the site. Here are some statistics:</p>
+        <ul>
+          <li>Load time from ~5.25 seconds down to ~1.50 seconds</li>
+          <li>123 Requests down to 92 Requests</li>
+          <li>Sending 5.5 MB down to 4.1 MB</li>
+        </ul>
+        <p>I saved almost 4 seconds of load time! I'm extremely impressed by this. There is still tons of room to improve. I think a reasonable goal is to get it below 1 second.</p>
+        <p>Once again, you can check out <a href="../portfolio/nthgen/">my version of the site here</a>.</p>
+      </section>
+      <section>
+        <h3>Next Steps</h3>
+        <ul>
+          <li>Bootstrap is unecessary - save requests and bytes</li>
+          <li>Not convinced jQuery is necessary</li>
+          <li>LESS is unreadable and inefficient - make the site more maintainable and save on bytes</li>
+          <li>Improve the responsive feature - there is still a lot happening in javascript that slows down the run time</li>
+          <li>Optimizing javascript transitions - lots of room to improve run time</li>
+        </ul>
+      </section>
+      <section>
+        <a href="../">&laquo; Back to resume</a>
+      </section>
+    </main>
+    <script src="highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 	</body>
 </html>
