@@ -1,0 +1,37 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 7:06:41 Jan 22, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:30:32 Oct 29, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/* styling for actions */ 
+
+.action {
+	 padding: 3px 6px 3px 19px;
+    font-family: 'TitilliumText22LBold', arial, sans-serif;
+    font-size: 0.8em;
+    display: block;
+    margin: 0 20px 3px 0;
+    color: #fff; 
+    /* default is static with grey background */
+    background: #666 url(images/icon-static.png) no-repeat scroll 4px 4px;
+}
+
+.target-down, .downgrade {
+	 background: #990000 url(images/icon-decrease.png) no-repeat scroll 4px 4px;
+}
+
+.target-up, .upgrade {
+	 background: #36701b url(images/icon-increase.png) no-repeat scroll 4px 4px;
+}
+
+.initiate, .reinitiate, .maintain {
+    background: #666 url(images/icon-static.png) no-repeat scroll 4px 4px;
+}

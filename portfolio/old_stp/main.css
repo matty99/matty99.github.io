@@ -1,0 +1,99 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 6:26:29 Jan 22, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:30:45 Oct 29, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/* Original style due to ben@subduedmedia.co.uk */
+
+/* ---------------------------------------- */
+/*          General Overall Styles          */
+/* ---------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	list-style: none;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	color : #505050;
+	text-align : center;
+	font: 80% Arial, Helvetica, Verdana, Tahoma, sans-serif;
+	background: #f0f0f0 url(images/body-bg.gif) repeat-x top;
+}
+
+
+/* ---------------------------------------- */
+/*          General Overall Styles          */
+/* ---------------------------------------- */
+
+h1 { 
+	font-size: 2em;
+	margin: 0em 0 0.5em 0;
+}
+
+h2 {
+	font-size: 1.6em;
+	margin: 0.5em 0 0.5em 0;
+}
+
+h3 {
+	font-size: 1.3em;
+	margin: 0.5em 0 0.5em 0;
+}
+
+h4 {
+	font-size: 1em;
+	margin: 0.5em 0 0.5em 0;
+}
+
+h1, h2, h3, h4 {
+	   font-family: 'TitilliumText22LBold', arial, sans-serif;
+	   color: #09879D;
+}
+/* ---------------------------------------- */
+/*         		 Tables and Data     	        */
+/* ---------------------------------------- */
+
+table td {
+	padding: 0.3em 0;
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.muted {
+	color:#a0a0a0;
+}
+
+.caption {
+	font-size: 1.3em;
+	font-weight: bold;
+	color:#000000; 
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #09879D;
+}
+
+.average-price,.consensus-price {
+	color: #990000;
+	text-align: right;
+}

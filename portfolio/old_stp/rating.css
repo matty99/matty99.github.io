@@ -1,0 +1,46 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 7:20:13 Jan 22, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 19:30:33 Oct 29, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/* classes .rating-good, .rating-neutral, .rating-bad are from an older version
+   of the style-sheet and included for reverse compatibility, but could 
+   eventually be removed */
+
+.rating, .rating-neutral, .rating-good, .rating-bad {
+    padding: 3px 6px 3px 6px;
+    font-family: 'TitilliumText22LBold', arial, sans-serif;
+    width: 70px;
+    font-size: 0.8em;
+    display: block;
+    margin: 0 3px 3px 0;
+    color: #fff;
+    background: #666; /* default styling is for neutral rating */
+}
+
+/* good ratings */
+.rating-good, .buy, .conviction-buy, .outperform, .sector-outperform, .overweight, .strong-buy, 
+.speculative-buy, .market-outperform, .top-pick, .accumulate, .positive, 
+.action-buy-list, .conviction-buy-list, .above-average, 
+.speculative-sector-outperform, .action-list-buy, .focus-list, .long-term-buy, 
+.think-fast-list, .speculative-outperform, .long-term-buy, .long-term-buy, 
+.best-pick, .buy-list, .focus-stock, .net-positive, .focus-list-buy, 
+.key-call-list, .select-list, .premium-list	{	
+	background: #36701b;
+}
+
+/* bad ratings */
+.rating-bad, .sell, .underperform, .sector-underperform, .underweight, .reduce, 
+.strong-sell, .negative, .below-average, .market-underperform, 
+.speculative-hold, .speculative-sector-underperform, .conviction-sell-list,
+ .sell-short 		{	
+	background: #990000;  
+}
