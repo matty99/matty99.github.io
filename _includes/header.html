@@ -2,12 +2,15 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/blog/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
     <nav class="site-nav">
       <div class="trigger">
-        <a class="page-link" href="/">&laquo; Back to resume</a>
-      </div>
+        {% for page in site.pages %}
+          {% if page.title %}
+          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          {% endif %}
+        {% endfor %}
     </nav>
 
   </div>

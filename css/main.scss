@@ -43,6 +43,15 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "post-tags",
+        "utils",
         "syntax-highlighting"
 ;
+
+footer {
+	h1, h3 { text-align: center; }
+	h1 { margin-bottom: 10px; }
+}
+footer {
+	padding-bottom: 50px;
+	text-align: center;
+}

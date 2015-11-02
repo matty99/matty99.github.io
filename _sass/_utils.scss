@@ -1,3 +1,17 @@
+/* Company Logos */
+
+$company-logo-size: 50px;
+.company-logo {
+  margin-top: 30px;
+  padding: 15px;
+  width: $company-logo-size;
+  height: $company-logo-size;
+  border: 2px dotted #555;
+  border-radius: $company-logo-size;
+}
+
+/* Post Tags */
+
 .post-tags {
   list-style: none;
   margin: 0;
@@ -45,4 +59,23 @@
   position: absolute;
   right: 0;
   top: 0;
+}
+
+
+/* Buttons */
+
+.button {
+    display: inline-block;
+    color: #333;
+  font-size: 22px;
+  font-weight: bold;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    box-shadow: 0 0 0 2px #555 inset;
+    border-radius: 6px;
+    &:hover {
+      box-shadow: 0 0 0 2px #000 inset;
+      color: #000;
+      transition: 0.5s;
+    }
 }
