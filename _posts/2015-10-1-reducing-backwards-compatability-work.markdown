@@ -5,6 +5,7 @@ description: A short trick to reduce the amount of backwards compatability work 
 tags:
 - Web Development
 - Frontend
+- Backwards compatability
 date: 2015-11-1
 ---
 
