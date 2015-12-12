@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Website Optimization - Part 1"
+title:  "Website Optimization"
 description: A flashback to a website I build over a year ago. I go over the code explaining where I went wrong and offering improvements. The focus of the series is page speed optimizations.
 tags:
 - Web Development
@@ -84,7 +84,7 @@ A responsive page shouldn't deny people the ability to zoom in, that is just sil
 
 ### Bad square code
 
-I was generating lots of responsive squares using javascript. This was simply a case of inexperience and lack of research at the time. I didn't think about how much I was going to be impacting browser performance with this kind of code, but now I know.
+I was generating lots of responsive squares using javascript. This isn't necessarily bad, since you don't want to write out that much html. The problem was I was also setting their width and height in javascript. This was simply a case of inexperience and lack of research at the time. I didn't think about how much I was going to be impacting browser performance with this kind of code, but now I know.
 
 {% highlight javascript %}
 function create_square_background () {
@@ -152,15 +152,11 @@ Just by being more critical of design decisions and making small javascript chan
 * 123 Requests down to 92 Requests
 * Sending 5.5 MB down to 4.1 MB
 
-I saved almost 4 seconds of load time! I'm extremely impressed by this. There is still tons of room to improve. I think a reasonable goal is to get it below 1 second.
+I saved almost 4 seconds of load time! I'm extremely impressed by this. There is still tons of room to improve. I think a reasonable goal is to get it below 1 second. Here are some ways to approach this goal:
 
-Once again, you can check out [my version of the site here](/)
+* Bootstrap is unecessary - I only use it for the grid and the menu. Removing it from dependencies will reduce page weight thus improving load time.
+* The LESS I originally wrote is unreadable and inefficient. Improving this would make the site more maintainable and make the css files transferred smaller.
+* Move code to make site responsive out of Javascript and into CSS, doing so will improve speed at run time.
+* Combining and minifying CSS and Javascript files is always possible
 
-
-### Next Steps
-
-* Bootstrap is unecessary - removing it will save requests and bytes
-* I'm not convinced jQuery is necessary
-* The LESS I wrote is unreadable and inefficient - make the site more maintainable and save on bytes
-* Improve the responsive feature - a lot still done in javascript that slows down the run time of the site
-* Optimizing javascript transitions - lots of room to improve run time
+Thanks for reading! I hope you got something out of this post. Once again, you can check out [my version of the site here](/)
