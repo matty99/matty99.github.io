@@ -152,10 +152,10 @@ Just by being more critical of design decisions and making small javascript chan
 * 123 Requests down to 92 Requests
 * Sending 5.5 MB down to 4.1 MB
 
-I saved almost 4 seconds of load time! I'm extremely impressed by this. There is still tons of room to improve. I think a reasonable goal is to get it below 1 second. Here are some ways to approach this goal:
+I saved almost 4 seconds of load time! I'm extremely impressed by this. There is still tons of room to improve but I don't think they are worthy of a blog post. Here are some potential next steps to improve site speed even more:
 
 * Bootstrap is unecessary - I only use it for the grid and the menu. Removing it from dependencies will reduce page weight thus improving load time.
-* The LESS I originally wrote is unreadable and inefficient. Improving this would make the site more maintainable and make the css files transferred smaller.
+* The LESS I originally wrote is unreadable and inefficient. Improving this would make the site more maintainable and make the CSS files transferred smaller.
 * Move code to make site responsive out of Javascript and into CSS, doing so will improve speed at run time.
 * Combining and minifying CSS and Javascript files is always possible
 
