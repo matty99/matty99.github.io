@@ -4,7 +4,8 @@
   "description": "A website displaying my work",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^2.0.4",
+    "imagemin-pngcrush": "^4.1.0"
   },
   "repository": {
     "type": "git",
