@@ -29,9 +29,9 @@ If you plan to make a modal window on your site, there is only one way to make a
 - It shouldn't cover the whole page (that means you need to take into account mobile as well!)
 - Converting the user should prevent the pop-up from showing up in the future.
 
-If you don't do all or at least most of these, I can easily claim that your users don't know how to leave your window and you are forcing them to convert to see.
+If you don't do all or at least most of these, I can easily claim that your users don't know how to leave your window and you are forcing them to convert (e.g. enter their email address) to see your content.
 
-Side note: There is a popular javascript library that tracks your mouse and shows the user a pop-up when they are about to navigate away from your page. You can't seriously think that's a good idea.
+Side note: There is a popular javascript library that tracks your mouse and shows the user a modal window when they are about to navigate away from your page. You can't seriously think that's a good idea.
 
 # Slowing down the web with bad code
 
