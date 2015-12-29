@@ -38,16 +38,16 @@ Side note: There is a popular javascript library that tracks your mouse and show
 Almost every ad provider uses the following line in their provided code snippet.
 
 {% highlight javascript %}
-document.write('<script src="'+src+'" type="text/javascript"></scr' + 'ipt>')
+document.write('<script src="'+src_file+'" type="text/javascript"></scr' + 'ipt>')
 {% endhighlight %}
 
 Why not just write to the DOM directly? Why not make it async? It's definitely not required content. Why slow down load time for no reason? I only see negatives of doing it this way.
 
 {% highlight html %}
-<script async src="src" type="text/javascript"></script>
+<script type="text/javascript" src="src_file.js" async></script>
 {% endhighlight %}
 
-Doing this will improve your page speed significantly.
+You'll see an improvement even without the async flag, but with it you stop it from being a render-blocking call making the change even more effective.
 
 # Click baiting
 
