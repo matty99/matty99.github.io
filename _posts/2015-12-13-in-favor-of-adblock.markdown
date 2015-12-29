@@ -21,12 +21,13 @@ Or you would visit a site and immediately you would be bombarded by pop-ups. Clo
 We finally purged the pop-up plague and had a peaceful web for a few years, then someone decided to create modal windows. You can claim they aren't pop-ups, but they are, and deep down you know that too.
 
 If you plan to make a modal window on your site, there is only one way to make a proper modal window:
-* The X button should be visible and clear.
-* The X button should also be in the top right or top left corner where you expect it to be.
-* The escape button should close the window.
-* Click off should work.
-* It shouldn't cover the whole page (that means you need to take into account mobile as well!)
-* Converting the user should prevent the pop-up from showing up in the future.
+
+- The X button should be visible and clear.
+- The X button should also be in the top right or top left corner where you expect it to be.
+- The escape button should close the window.
+- Click off should work.
+- It shouldn't cover the whole page (that means you need to take into account mobile as well!)
+- Converting the user should prevent the pop-up from showing up in the future.
 
 If you don't do all or at least most of these, I can easily claim that your users don't know how to leave your window and you are forcing them to convert to see.
 
@@ -54,7 +55,7 @@ If people get paid for clicks, why not trick people into clicking on things?
 
 Adsense has fairly strict rules against this sort of thing, but it's not clear how well enforced they are. As a website owner, you are rewarded for blending in ads with your content. I even see ad companies promoting this sort of thing. This is because when you get a click, they are paid too.
 
-How many times have you visited a download page and seen more than one download button. I'm not talking about mirror download pages, I'm talking about download buttons that are actually ads. In some cases they are even malicious programs.
+How many times have you visited a download page and seen more than one download button? I'm not talking about mirror download pages, I'm talking about download buttons that are actually ads. In some cases they are even malicious programs.
 
 # Data selling
 
