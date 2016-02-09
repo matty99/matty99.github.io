@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Socratic Square"
-description: A look into all the possibilities and common mistakes for making a square in the browser.
+description: A look into all the possibilities and common mistakes when making a square in the browser.
 tags:
 - Web Development
 - CSS
