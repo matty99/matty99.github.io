@@ -5,7 +5,8 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4",
-    "imagemin-pngcrush": "^4.1.0"
+    "imagemin-pngcrush": "^4.1.0",
+    "imagemin-pngquant": "^4.2.0"
   },
   "repository": {
     "type": "git",
