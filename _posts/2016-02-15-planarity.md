@@ -3,7 +3,7 @@ layout: post
 title:  "Planarity Explained"
 description: An interesting way to visualize and better understand planarity from graph theory
 tags:
-- Graph Theory
+- Graph theory
 - Mathematics
 date: 2016-02-15
 ---

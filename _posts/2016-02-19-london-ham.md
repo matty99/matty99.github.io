@@ -3,7 +3,7 @@ layout: post
 title:  "London Ham"
 description: A creative writing piece I did on my summer trip that I decided to post
 tags:
-- Creative Writing
+- Creative writing
 - Comedy
 - Silly
 date: 2016-02-19

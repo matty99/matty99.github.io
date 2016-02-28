@@ -3,11 +3,9 @@ layout: post
 title:  "Website Optimization"
 description: A flashback to a website I build over a year ago. I go over the code explaining where I went wrong and offering improvements. The focus of the series is page speed optimizations.
 tags:
-- Web Development
-- Frontend
+- Web development
+- Front end development
 - Self-improvement
-- Javascript
-- CSS
 date: 2015-09-12
 ---
 ### Introduction
@@ -18,7 +16,7 @@ The site takes a long time to load, is slow, and when I show it off it reflects 
 
 ### Build it static!
 
-The decision to not have a server for the site happened late in the project, but had the biggest impact on the site in how much bad code it generated as a result. The entire site was to be hosted in AWS Buckets instead of giving it a server. This was a huge and unecessary handicap to save a little bit of money on hosting. The difference between buckets and a medium instance is a significant sum of money, and the company has probably saved a lot of money with this decision. However, they could have saved even more since the site didn't need a dedicated server. They ran an app in house that had multiple servers and they could have just dropped it on one of those instead, making the site essentially free to host. The traffic from the one site would not affect the other in any significant way meaning they really had nothing to worry about.
+The decision to not have a server for the site happened late in the project, but had the biggest impact on the site in how much bad code it generated as a result. The entire site was to be hosted in AWS Buckets instead of giving it a server. This was a huge and unnecessary handicap to save a little bit of money on hosting. The difference between buckets and a medium instance is a significant sum of money, and the company has probably saved a lot of money with this decision. However, they could have saved even more since the site didn't need a dedicated server. They ran an application in house that had multiple servers and they could have just dropped it on one of those instead, making the site essentially free to host. The traffic from the one site would not affect the other in any significant way meaning they really had nothing to worry about.
 
 For a lot of the project I accepted the decisions that were made higher up because I wasn't comfortable arguing with them about the correct choice. We've arrived at the root of the problem, me. I didn't stand up nearly strong enough for the necessity of server and as a result my project suffered.
 
@@ -41,13 +39,13 @@ This is another consequence of not having a server, and trying to do too much wi
 **Lesson learned:** Don't sacrifice load time to try to make things easier for you to manage. The site is for the user after all.
 
 
-### Backwards compatability
+### Backwards compatibility
 
 By default I would be loading a page that said please update your browser. I used a browser detector called Bowser.js to find out if the user was using an old browser and if they weren't I would load the rest of the page.
 
 The better way to do this is with feature detection with Modernizr.js (which I'm already using on the page). If the user doesn't have certain features, redirect them to a different page that tells the user to update their browser. That way, in the regular case the user starts loading the page right away instead of waiting on browser detection code to run.
 
-There is something really ugly about any sort of browser detection, but until you can guarentee everyone is running an up-to-date browser you have to do some.
+There is something really ugly about any sort of browser detection, but until you can guarantee everyone is running an up-to-date browser you have to do some.
 
 **Lesson learned:** Don't try to combine two pages into one, especially in a static site.
 
@@ -77,14 +75,14 @@ I've changed this to instead read:
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 {% endhighlight %}
 
-A responsive page shouldn't deny people the ability to zoom in, that is just silly. I will go a step futher. No site should deny users the ability to zoom in on content. There are tons of people out there with visual disabilities that can't view your site at regular zoom. Furthermore, if you've ever opened a site on your phone and not been able to read something, what would you do if you couldn't zoom in on it either? Think about how frustrating would that be. In my case, my site was already responsive so I had nothing to worry about.
+A responsive page shouldn't deny people the ability to zoom in, that is just silly. I will go a step further. No site should deny users the ability to zoom in on content. There are tons of people out there with visual disabilities that can't view your site at regular zoom. Furthermore, if you've ever opened a site on your phone and not been able to read something, what would you do if you couldn't zoom in on it either? Think about how frustrating would that be. In my case, my site was already responsive so I had nothing to worry about.
 
 **Lesson learned:** Put your users first.
 
 
 ### Bad square code
 
-I was generating lots of responsive squares using javascript. This isn't necessarily bad, since you don't want to write out that much html. The problem was I was also setting their width and height in javascript. This was simply a case of inexperience and lack of research at the time. I didn't think about how much I was going to be impacting browser performance with this kind of code, but now I know.
+I was generating lots of responsive squares using Javascript. This isn't necessarily bad, since you don't want to write out that much HTML. The problem was I was also setting their width and height in Javascript. This was simply a case of inexperience and lack of research at the time. I didn't think about how much I was going to be impacting browser performance with this kind of code, but now I know.
 
 {% highlight javascript %}
 function create_square_background () {
@@ -112,7 +110,7 @@ function resizeHeaderSquares() {
 
 This code would crash the browser on phones trying to run the site. If you rotated your screen to landscape you would have to restart the page, simple as that. There was also a bit of code that would add squares depending on if the height of the screen exceeded the width of the screen. I will deal with this in a later post.
 
-Javascript to generate the squares is not a bad thing. It saves you a lot of code in your html file, and is quite elegant. The problem is the resizing. Any time you resize the screen you're doing a loop through at least 400 DOM objects and modifying their CSS. There is no reason to do this if you can do it in pure CSS instead. The work around is simple.
+Javascript to generate the squares is not a bad thing. It saves you a lot of code in your HTML file, and is quite elegant. The problem is the resizing. Any time you resize the screen you're doing a loop through at least 400 DOM objects and modifying their CSS. There is no reason to do this if you can do it in pure CSS instead. The work around is simple.
 
 {% highlight css %}
 .square {
@@ -126,7 +124,7 @@ Javascript to generate the squares is not a bad thing. It saves you a lot of cod
 }
 {% endhighlight %}
 
-And the javascript to generate the squares:
+And the Javascript to generate the squares:
 
 {% highlight javascript %}
 function create_square_background () {
@@ -146,7 +144,7 @@ function create_square_background () {
 
 ### Results (tl;dr)
 
-Just by being more critical of design decisions and making small javascript changes I was able to make a huge impact on load and running time of the site. Here are some statistics:
+Just by being more critical of design decisions and making small Javascript changes I was able to make a huge impact on load and running time of the site. Here are some statistics:
 
 * Load time from ~5.25 seconds down to ~1.50 seconds
 * 123 Requests down to 92 Requests
@@ -154,7 +152,7 @@ Just by being more critical of design decisions and making small javascript chan
 
 I saved almost 4 seconds of load time! I'm extremely impressed by this. There is still tons of room to improve but I don't think they are worthy of a blog post. Here are some potential next steps to improve site speed even more:
 
-* Bootstrap is unecessary - I only use it for the grid and the menu. Removing it from dependencies will reduce page weight thus improving load time.
+* Bootstrap is unnecessary - I only use it for the grid and the menu. Removing it from dependencies will reduce page weight thus improving load time.
 * The LESS I originally wrote is unreadable and inefficient. Improving this would make the site more maintainable and make the CSS files transferred smaller.
 * Move code to make site responsive out of Javascript and into CSS, doing so will improve speed at run time.
 * Combining and minifying CSS and Javascript files is always possible

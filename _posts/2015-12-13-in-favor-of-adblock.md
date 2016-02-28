@@ -31,7 +31,7 @@ If you plan to make a modal window on your site, there is only one way to make a
 
 If you don't do all or at least most of these, I can easily claim that your users don't know how to leave your window and you are forcing them to convert (e.g. enter their email address) to see your content.
 
-Side note: There is a popular javascript library that tracks your mouse and shows the user a modal window when they are about to navigate away from your page. You can't seriously think that's a good idea.
+Side note: There is a popular Javascript library that tracks your mouse and shows the user a modal window when they are about to navigate away from your page. You can't seriously think that's a good idea.
 
 # Slowing down the web with bad code
 
@@ -67,7 +67,7 @@ Companies sell data about you! If you didn't know before, now you know. Here is 
 - When you...I think you get the point
 
 Here are a few concrete examples of this happening:
-- Linkedin started selling resume skills to recruiters. In fact it just became the source of endless recruiter spam so I just left.
+- LinkedIn started selling resume skills to recruiters. In fact it just became the source of endless recruiter spam so I just left.
 - Facebook started lying on your news feed about things your friends did. Your friend liked this. Your friend looked at this. No they didn't, that's bullshit. My news feed became just lies several days in a row, so I just left.
 
 I find it pretty awful that companies are profiting off of data that I publicize about myself. I can no longer go to a site and enter in any information about myself without second guessing.

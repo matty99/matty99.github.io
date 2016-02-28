@@ -3,7 +3,7 @@ layout: post
 title:  "The Socratic Square"
 description: A look into all the possibilities and common mistakes when making a square in the browser.
 tags:
-- Web Development
+- Web development
 - CSS
 date: 2015-12-27
 ---
@@ -74,7 +74,7 @@ $square-size: 75px;
 
 *Student:* Gross. So it's really just a hack.
 
-*Teacher:* Right. It's a little bit more intuitive in javascript, but it's a lot of code and it's not very fast if you have a lot of squares.
+*Teacher:* Right. It's a little bit more intuitive in Javascript, but it's a lot of code and it's not very fast if you have a lot of squares.
 
 {% highlight javascript %}
 window.onresize = function () {
@@ -89,7 +89,7 @@ window.onresize = function () {
 
 *Student:* Ugh, makes sense but it's so clunky.
 
-*Teacher:* It's not great, and you don't really want to be doing these sorts of style changes in javascript anyways because when you resize the window, the browser has already applied all the CSS changes, and then it calls your javascript, which modifies styles again, and then the browser has to apply the changes again. It's working against the browser and slowing down the website. Also, if you have a lot of squares on a page it takes a lot longer to apply styles to each square and recalculate than if you did it with CSS.
+*Teacher:* It's not great, and you don't really want to be doing these sorts of style changes in Javascript anyways because when you resize the window, the browser has already applied all the CSS changes, and then it calls your Javascript, which modifies styles again, and then the browser has to apply the changes again. It's working against the browser and slowing down the website. Also, if you have a lot of squares on a page it takes a lot longer to apply styles to each square and recalculate than if you did it with CSS.
 
 *Student:* Yea, I would rather stick to CSS
 
@@ -104,7 +104,7 @@ window.onresize = function () {
 
 *Student:* Hey! That looks pretty good. What's that?
 
-*Teacher:* _vw_ is a unit just like _px_ or _em_, just that _vw_ is relative to 1% of the width of the viewport. That also means it won't always work. It's always relative to the width of the screen, where as if you use percent it's the width of the containing element. That means that, it doesn't matter how small or big the containing element is, the square is always going to be 10% of the size of the screen.
+*Teacher:* _vw_ is a unit just like _px_ or _em_, just that _vw_ is relative to 1% of the width of the view port. That also means it won't always work. It's always relative to the width of the screen, where as if you use percent it's the width of the containing element. That means that, it doesn't matter how small or big the containing element is, the square is always going to be 10% of the size of the screen.
 
 *Student:* ...
 
@@ -118,7 +118,7 @@ window.onresize = function () {
 }
 ```
 
-The CSS describes exactly what I mean and it is word-for-word the defenition of a square. Like you said "The one thing I know for certain about squares is that their height and width are equal"
+The CSS describes exactly what I mean and it is word-for-word the definition of a square. Like you said "The one thing I know for certain about squares is that their height and width are equal"
 
 *Teacher:* There is [GSS](https://gridstylesheets.org/) but it's a work in progress. It is supported by most modern browsers, but not much more than that. It might be little while longer before you can start using it on all your websites, but here is how you would write it:
 
