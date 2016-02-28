@@ -9,8 +9,6 @@ tags:
 date: 2016-02-19
 ---
 
-# London Ham
-
 I didn't know this but ham is heavily ingrained in the British culture. Everywhere you go there is ham, being offered or sold. People in their community are even famous for their feats of ham. Because of this, I decided to have a proper ham day on Wednesday. I started off the day with a ham and cheese sandwich and packed one up in my bag for lunch as well and off I went! I hopped into the tube and soon enough I arrived at Buckingham Palace.
 
 Called Buckingham because their ham had a little bit of a kick to it. I shouldn't say little. I got a small sample and it's like being kicked in the stomach by a bull. I can't say I wasn't warned, it's right in the name. After you get past the initial shock, the smoked ham just falls apart in your mouth. Brilliant! It's no wonder this family is famous across the lands, and even considered royalty some parts. The palace is their production facility, a wonderful old building embroidered with lots of gold all over, a sign of their successes, surrounded by a large 10 foot iron gate and heavily guarded by large men in uniform carrying hefty machine guns. One must protect such a successful family secret. Their recipe has been passed down for many generations, and probably many more to come. Unfortunately I was unable to enter the grand building, but I'm not too bothered. I have lots of other things to get to today. Next up, a massive ham festival.

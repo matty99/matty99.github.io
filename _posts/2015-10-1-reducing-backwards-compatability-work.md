@@ -9,8 +9,6 @@ tags:
 date: 2015-11-1
 ---
 
-### A graph from my Google Analytics
-
 I recently spent quite a bit of time looking at the analytics on the site I run. Here is a graph I found that I'm proud of.
 
 This is a graph of IE7 usage relative to other IE versions over time.

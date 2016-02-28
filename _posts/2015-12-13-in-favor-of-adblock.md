@@ -12,7 +12,7 @@ Lately there has been a whole lot of hubbub around Ad-blockers. I wanted to add 
 
 There are lots of arguments against Ad-blockers and blockers in general, people claiming that ads support small content creators and cover server costs. Those things may be true, but I'm here to tell you about the dark side of ads. All the things that ads support that I know I don't want in my society. You'll notice it's a long post. It's because there is a whole lot more bad than good when it comes to ads.
 
-# Pop-ups and the return of pop-ups
+### Pop-ups and the return of pop-ups
 
 I remember many years ago every time you were done browsing the web you would close your browser and then you would have to also close anywhere from 3-10 ad windows as well.
 
@@ -33,7 +33,7 @@ If you don't do all or at least most of these, I can easily claim that your user
 
 Side note: There is a popular Javascript library that tracks your mouse and shows the user a modal window when they are about to navigate away from your page. You can't seriously think that's a good idea.
 
-# Slowing down the web with bad code
+### Slowing down the web with bad code
 
 Almost every ad provider uses the following line in their provided code snippet.
 
@@ -49,7 +49,7 @@ Why not just write to the DOM directly? Why not make it async? It's definitely n
 
 You'll see an improvement even without the async flag, but with it you stop it from being a render-blocking call making the change even more effective.
 
-# Click baiting
+### Click baiting
 
 If people get paid for clicks, why not trick people into clicking on things?
 
@@ -57,7 +57,7 @@ Adsense has fairly strict rules against this sort of thing, but it's not clear h
 
 How many times have you visited a download page and seen more than one download button? I'm not talking about mirror download pages, I'm talking about download buttons that are actually ads. In some cases they are even malicious programs.
 
-# Data selling
+### Data selling
 
 Companies sell data about you! If you didn't know before, now you know. Here is the process:
 
@@ -72,7 +72,7 @@ Here are a few concrete examples of this happening:
 
 I find it pretty awful that companies are profiting off of data that I publicize about myself. I can no longer go to a site and enter in any information about myself without second guessing.
 
-# Browser fingerprinting
+### Browser fingerprinting
 
 This to me is the absolute worst thing that has happened as a result of ads. I actually didn't become adamant about blocking ads until this became the trendy thing to do.
 
@@ -82,12 +82,12 @@ If everyone used Adsense on their site, Google would know what sites you visited
 
 It's not even about what you do with the information, because showing the same ads between sites is pretty insignificant. It's more about what you could do with this information.
 
-# Beyond the web
+### Beyond the web
 
 - Junk mail. Guess what people get paid to send you junk mail. If they didn't, you wouldn't get it.
 - Telemarketers. There are no spam folders on your phone. You still get that call. The people on the other end of that call are paid to advertise a product to you. If they weren't you wouldn't be annoyed at dinner.
 
-# Reducing overall quality
+### Reducing overall quality
 
 A good restaurant or a well placed store can stay open for years. This happens because it is offering a service that is useful to people and people are supporting it.
 
@@ -95,7 +95,7 @@ A bad shop may only stay open for a year, maybe even less. On the other hand a b
 
 How do I expect small online businesses to survive if they can't use ads to cover their costs? The same way I expect shop owners to survive. Build a product that people need, that they pay for. Relying on ads to make money probably means your product sales aren't converting. You need to fix your product and make it better.
 
-# To wrap up
+### To wrap up
 
 I could go on forever about this, and what I wrote about above is still only a partial list. I have a hard time seeing the good in the way ads are used on the web and I doubt I ever will.
 
