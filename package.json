@@ -4,14 +4,13 @@
   "description": "A website displaying my work",
   "devDependencies": {
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4",
     "imagemin-pngcrush": "^4.1.0",
     "imagemin-pngquant": "^4.2.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/matty99/matty99.github.io.git"
+    "url": "https://github.com/mrstork/mrstork.github.io.git"
   },
   "author": "Mateusz Bocian",
-  "homepage": "matty99.github.io"
+  "homepage": "mrstork.github.io"
 }
