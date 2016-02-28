@@ -1,81 +1,60 @@
-/* Company Logos */
+// Company Logos
 
 $company-logo-size: 50px;
+
 .company-logo {
+  border: 2px dotted $grey-color;
+  border-radius: $company-logo-size;
+  height: $company-logo-size;
   margin-top: 30px;
   padding: 15px;
   width: $company-logo-size;
-  height: $company-logo-size;
-  border: 2px dotted #555;
-  border-radius: $company-logo-size;
 }
 
-/* Post Tags */
-
+// Post Tags
 .post-tags {
   list-style: none;
   margin: 0;
-  overflow: hidden; 
+  overflow: hidden;
   padding: 0;
-}
 
-.post-tags li {
-  float: left;
-  font-size: 11px;
+  li {
+    float: left;
+    font-size: 11px;
+  }
 }
 
 .post-tag {
-  background: #eee;
+  background: $background-color;
   border-radius: 3px 0 0 3px;
-  color: #999;
+  color: $grey-color;
   display: inline-block;
   height: 26px;
   line-height: 26px;
+  margin: 0 10px 10px 0;
   padding: 0 20px 0 23px;
   position: relative;
-  margin: 0 10px 10px 0;
   text-decoration: none;
-  -webkit-transition: color 0.2s;
 }
 
 .post-tag::before {
-  background: #fff;
+  background: $background-color;
   border-radius: 10px;
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
   content: '';
   height: 6px;
   left: 10px;
   position: absolute;
-  width: 6px;
   top: 10px;
+  width: 6px;
 }
 
 .post-tag::after {
-  background: #fff;
+  background: $background-color;
   border-bottom: 13px solid transparent;
-  border-left: 10px solid #eee;
+  border-left: 10px solid $background-color;
   border-top: 13px solid transparent;
   content: '';
   position: absolute;
   right: 0;
   top: 0;
-}
-
-
-/* Buttons */
-
-.button {
-    display: inline-block;
-    color: #333;
-  font-size: 22px;
-  font-weight: bold;
-    text-decoration: none;
-    padding: 0.75em 1.5em;
-    box-shadow: 0 0 0 2px #555 inset;
-    border-radius: 6px;
-    &:hover {
-      box-shadow: 0 0 0 2px #000 inset;
-      color: #000;
-      transition: 0.5s;
-    }
 }
