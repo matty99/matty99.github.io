@@ -8,7 +8,7 @@ tags:
 date: 2016-02-15
 ---
 
-I have spent a lot of time with graph theory, specifically thinking about planarity, and during that time I came up with an interesting way to visualize planarity. Once I started visualizing graphs with this method it was very difficult to see them any other way. I would like to attempt to share with you this idea today.
+I have spent a lot of time with graph theory, specifically thinking about planarity, and during that time I came up with an interesting way to visualize planarity. Once I started visualizing graphs with this method it was difficult to see them any other way. I would like to attempt to share with you this idea today.
 
 Given an arbitrary graph it is difficult to know whether or not it is planar just by looking at it, but we have a formula to describe precisely what it means to be planar. That formula goes by the name of **Euler's Formula**
 

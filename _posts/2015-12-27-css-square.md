@@ -17,9 +17,9 @@ date: 2015-12-27
 }
 {% endhighlight %}
 
-*Student:* Perfect! But what if I want the size of the square to change?
+*Student:* Perfect, but what if I want the size of the square to change?
 
-*Teacher:* Well I guess you could set a variable...call it _size_ I guess...and set the height and width to that variable.
+*Teacher:* Well I guess you could set a variable…call it _size_ I guess…and set the height and width to that variable.
 
 {% highlight scss %}
 $square-size: 75px;
@@ -45,7 +45,7 @@ $square-size: 75px;
 
 *Teacher:* Does it have a fixed size at certain screen widths, or does it change smoothly with the size of the screen?
 
-*Student:* Smooth! I think I know how to do fixed sizes now. I tried this, but it didn't work.
+*Student:* Smoothly! I think I know how to do fixed sizes now. I tried this, but it didn't work.
 
 {% highlight css %}
 .square {
@@ -74,7 +74,7 @@ $square-size: 75px;
 
 *Student:* Gross. So it's really just a hack.
 
-*Teacher:* Right. It's a little bit more intuitive in Javascript, but it's a lot of code and it's not very fast if you have a lot of squares.
+*Teacher:* Right. It's a little bit more intuitive in Javascript, but it's a lot of code and it's not fast if you have a lot of squares.
 
 {% highlight javascript %}
 window.onresize = function () {
@@ -106,7 +106,7 @@ window.onresize = function () {
 
 *Teacher:* _vw_ is a unit just like _px_ or _em_, just that _vw_ is relative to 1% of the width of the view port. That also means it won't always work. It's always relative to the width of the screen, where as if you use percent it's the width of the containing element. That means that, it doesn't matter how small or big the containing element is, the square is always going to be 10% of the size of the screen.
 
-*Student:* ...
+*Student:* …
 
 *Teacher:* You seem troubled.
 
@@ -130,6 +130,6 @@ The CSS describes exactly what I mean and it is word-for-word the definition of 
 
 *Teacher:* Class dismissed.
 
-*Student:* Wait but...
+*Student:* Wait but…
 
 *Teacher:* I SAID CLASS DISMISSED!

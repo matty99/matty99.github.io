@@ -26,7 +26,7 @@ If you plan to make a modal window on your site, there is only one way to make a
 - The X button should also be in the top right or top left corner where you expect it to be.
 - The escape button should close the window.
 - Click off should work.
-- It shouldn't cover the whole page (that means you need to take into account mobile as well!)
+- It shouldn't cover the whole page (that means you need to take into account mobile as well)
 - Converting the user should prevent the pop-up from showing up in the future.
 
 If you don't do all or at least most of these, I can easily claim that your users don't know how to leave your window and you are forcing them to convert (e.g. enter their email address) to see your content.
@@ -59,26 +59,26 @@ How many times have you visited a download page and seen more than one download 
 
 ### Data selling
 
-Companies sell data about you! If you didn't know before, now you know. Here is the process:
+**Companies sell data about you.** If you didn't know before, now you know. Here is the process:
 
 - When you enter your gender, you get gender targeted ads.
 - When you you enter your birthday, you get age-targeted ads.
 - When you tell them where you live, you will get country specific ads.
-- When you...I think you get the point
+- When you…I think you get the point
 
 Here are a few concrete examples of this happening:
 - LinkedIn started selling resume skills to recruiters. In fact it just became the source of endless recruiter spam so I just left.
 - Facebook started lying on your news feed about things your friends did. Your friend liked this. Your friend looked at this. No they didn't, that's bullshit. My news feed became just lies several days in a row, so I just left.
 
-I find it pretty awful that companies are profiting off of data that I publicize about myself. I can no longer go to a site and enter in any information about myself without second guessing.
+I find it pretty awful that companies are profiting off the data that I publicize about myself. I can no longer go to a site and enter in any information about myself without second guessing.
 
 ### Browser fingerprinting
 
 This to me is the absolute worst thing that has happened as a result of ads. I actually didn't become adamant about blocking ads until this became the trendy thing to do.
 
-To sum this up, ads clicked on one site influence ads you see on another. Think about what that means!
+To sum this up, ads clicked on one site influence ads you see on another. Think about what that means.
 
-If everyone used Adsense on their site, Google would know what sites you visited in what order at what time, how long you stayed on each site...the list goes on. This is, by definition, mass surveillance.
+If everyone used Adsense on their site, Google would know what sites you visited in what order at what time, how long you stayed on each site…the list goes on. This is, by definition, mass surveillance.
 
 It's not even about what you do with the information, because showing the same ads between sites is pretty insignificant. It's more about what you could do with this information.
 

@@ -12,9 +12,9 @@ date: 2015-09-12
 
 A year ago I was working as a Front End Developer at a company called NthGen Software Inc. and my first project was to redesign their website with their two designers. By the time I had gotten there the design was essentially finished, which, in hindsight, should have been a red flag for me. Wanting to impress and make a splash I tried to match the design pixel for pixel without considering load times, performance issues, and most importantly the user. This piece takes a look at all the code I wrote as an inexperienced developer, explains why I wrote it that way, and suggests improvements in hopes of learning a few lessons for future projects.
 
-The site takes a long time to load, is slow, and when I show it off it reflects poorly on the work I am capable of doing. I'm writing this post because I approached the company in hopes that they would let me fix it but they were uninterested in the proposal. I wanted someone to benefit from these changes besides me, so hopefully someone will read this post and gain something from it.
+The site takes a long time to load, is slow, and when I show it off it reflects poorly on the work I am capable of doing. I'm writing this post because I approached the company in hopes that they would let me fix it but they were uninterested in the proposal. I wanted someone to benefit from these changes besides me, so I hope someone will read this post and gain something from it.
 
-### Build it static!
+### Build it static
 
 The decision to not have a server for the site happened late in the project, but had the biggest impact on the site in how much bad code it generated as a result. The entire site was to be hosted in AWS Buckets instead of giving it a server. This was a huge and unnecessary handicap to save a little bit of money on hosting. The difference between buckets and a medium instance is a significant sum of money, and the company has probably saved a lot of money with this decision. However, they could have saved even more since the site didn't need a dedicated server. They ran an application in house that had multiple servers and they could have just dropped it on one of those instead, making the site essentially free to host. The traffic from the one site would not affect the other in any significant way meaning they really had nothing to worry about.
 
@@ -60,7 +60,7 @@ The worst part was that there was no signal of what the website was doing. I wou
 
 Since I've cut down on whole bunch of things that slow the loading of the page down, I no longer need any sort of loading page in my version of the site.
 
-**Lesson learned:** If you need a loading screen, make it very clear that it is a loading screen.
+**Lesson learned:** If you need a loading screen, make it clear that it is a loading screen.
 
 
 ### Bad meta tag:
