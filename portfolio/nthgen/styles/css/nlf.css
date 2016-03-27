@@ -1,4 +1,5 @@
 /* general style for the form */
+
 .nl-form {
   position: relative;
   width: 95%;
@@ -17,7 +18,9 @@
   margin: 0;
   padding: 0;
 }
+
 /* normalize the input elements, make them look like everything else */
+
 .nl-form input,
 .nl-form textarea,
 .nl-form select,
@@ -43,14 +46,18 @@
 .nl-form textarea:focus {
   outline: none;
 }
+
 /* custom field (drop-down, text element) styling  */
+
 .nl-field {
   display: inline-block;
 }
 .nl-field.nl-field-open {
   z-index: 10000;
 }
+
 /* the toggle is the visible part in the form */
+
 .nl-field-toggle,
 .nl-form input,
 .nl-form textarea,
@@ -67,7 +74,9 @@
   text-decoration: none;
   color: #024686;
 }
+
 /* drop-down list / text element */
+
 .nl-field ul {
   position: absolute;
   visibility: hidden;
@@ -116,10 +125,10 @@
   background-color: #07498c;
   color: #fff;
 }
+
 /* icons for some elements */
-.nl-dd ul li.nl-dd-checked:before,
-.nl-field-go:before,
-.nl-textarea-go:before {
+
+.nl-dd ul li.nl-dd-checked:before, .nl-field-go:before, .nl-textarea-go:before {
   font-family: 'Glyphicons Halflings';
   speak: none;
   font-style: normal;
@@ -188,7 +197,9 @@
   line-height: 2.5;
   display: block;
 }
+
 /* custom placeholder color */
+
 *::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
@@ -211,7 +222,9 @@
 *:focus::-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.2);
 }
+
 /* submit button */
+
 .nl-submit-wrap {
   margin-top: 25px;
   text-align: center;
@@ -236,7 +249,9 @@
     font-size: 20px;
   }
 }
+
 /* overlay becomes visible when a field is opened */
+
 .nl-overlay {
   position: fixed;
   top: 0;

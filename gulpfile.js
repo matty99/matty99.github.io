@@ -10,8 +10,10 @@ gulp.task('images', function () {
       optimizationLevel: 7,
       multipass: true,
       progressive: true,
-      svgoPlugins: [{removeViewBox: false}],
+      svgoPlugins: [{
+        removeViewBox: false
+      }],
       use: [pngquant()]
     }))
-  	.pipe(gulp.dest('images'));
+    .pipe(gulp.dest('images'));
 });

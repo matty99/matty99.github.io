@@ -7,19 +7,18 @@ permalink: /blog/
 <div class="home">
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
-        </h2>
-        <p>{{ post.description }}</p>
-        <ul class="post-tags">
-          {% for tag in post.tags %}
-            <li class="post-tag">{{ tag }}</li>
-          {% endfor %}
-        </ul>
-      </li>
+    <li>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <h2>
+        <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+      </h2>
+      <p>{{ post.description }}</p>
+      <ul class="post-tags">
+        {% for tag in post.tags %}
+        <li class="post-tag">{{ tag }}</li>
+        {% endfor %}
+      </ul>
+    </li>
     {% endfor %}
   </ul>
 </div>

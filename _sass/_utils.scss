@@ -1,7 +1,5 @@
 // Company Logos
-
 $company-logo-size: 50px;
-
 .company-logo {
   border: 2px dotted $grey-color;
   border-radius: $company-logo-size;
@@ -10,20 +8,17 @@ $company-logo-size: 50px;
   padding: 15px;
   width: $company-logo-size;
 }
-
 // Post Tags
 .post-tags {
   list-style: none;
   margin: 0;
   overflow: hidden;
   padding: 0;
-
   li {
     float: left;
     font-size: 11px;
   }
 }
-
 .post-tag {
   background: $background-color;
   border-radius: 3px 0 0 3px;
@@ -36,7 +31,6 @@ $company-logo-size: 50px;
   position: relative;
   text-decoration: none;
 }
-
 .post-tag::before {
   background: $background-color;
   border-radius: 10px;
@@ -47,7 +41,6 @@ $company-logo-size: 50px;
   top: 10px;
   width: 6px;
 }
-
 .post-tag::after {
   background: $background-color;
   border-bottom: 13px solid transparent;

@@ -18,14 +18,15 @@
  * ======================================================================== */
 
 
-+function ($) { "use strict";
++ function($) {
+  "use strict";
 
   // COLLAPSE PUBLIC CLASS DEFINITION
   // ================================
 
-  var Collapse = function (element, options) {
-    this.$element      = $(element)
-    this.options       = $.extend({}, Collapse.DEFAULTS, options)
+  var Collapse = function(element, options) {
+    this.$element = $(element)
+    this.options = $.extend({}, Collapse.DEFAULTS, options)
     this.transitioning = null
 
     if (this.options.parent) this.$parent = $(this.options.parent)
@@ -36,12 +37,12 @@
     toggle: true
   }
 
-  Collapse.prototype.dimension = function () {
+  Collapse.prototype.dimension = function() {
     var hasWidth = this.$element.hasClass('width')
     return hasWidth ? 'width' : 'height'
   }
 
-  Collapse.prototype.show = function () {
+  Collapse.prototype.show = function() {
     if (this.transitioning || this.$element.hasClass('in')) return
 
     var startEvent = $.Event('show.bs.collapse')
@@ -61,16 +62,14 @@
 
     this.$element
       .removeClass('collapse')
-      .addClass('collapsing')
-      [dimension](0)
+      .addClass('collapsing')[dimension](0)
 
     this.transitioning = 1
 
-    var complete = function () {
+    var complete = function() {
       this.$element
         .removeClass('collapsing')
-        .addClass('in')
-        [dimension]($(window).height())
+        .addClass('in')[dimension]($(window).height())
       this.transitioning = 0
       this.$element.trigger('shown.bs.collapse')
     }
@@ -81,11 +80,10 @@
 
     this.$element
       .one($.support.transition.end, $.proxy(complete, this))
-      .emulateTransitionEnd(350)
-      [dimension](this.$element[0][scrollSize])
+      .emulateTransitionEnd(350)[dimension](this.$element[0][scrollSize])
   }
 
-  Collapse.prototype.hide = function () {
+  Collapse.prototype.hide = function() {
     if (this.transitioning || !this.$element.hasClass('in')) return
 
     var startEvent = $.Event('hide.bs.collapse')
@@ -94,9 +92,7 @@
 
     var dimension = this.dimension()
 
-    this.$element
-      [dimension](this.$element[dimension]())
-      [0].offsetHeight
+    this.$element[dimension](this.$element[dimension]())[0].offsetHeight
 
     this.$element
       .addClass('collapsing')
@@ -105,7 +101,7 @@
 
     this.transitioning = 1
 
-    var complete = function () {
+    var complete = function() {
       this.transitioning = 0
       this.$element
         .trigger('hidden.bs.collapse')
@@ -115,13 +111,12 @@
 
     return complete.call(this)
 
-    this.$element
-      [dimension](0)
+    this.$element[dimension](0)
       .one($.support.transition.end, $.proxy(complete, this))
       .emulateTransitionEnd(350)
   }
 
-  Collapse.prototype.toggle = function () {
+  Collapse.prototype.toggle = function() {
     this[this.$element.hasClass('in') ? 'hide' : 'show']()
   }
 
@@ -131,10 +126,10 @@
 
   var old = $.fn.collapse
 
-  $.fn.collapse = function (option) {
-    return this.each(function () {
-      var $this   = $(this)
-      var data    = $this.data('bs.collapse')
+  $.fn.collapse = function(option) {
+    return this.each(function() {
+      var $this = $(this)
+      var data = $this.data('bs.collapse')
       var options = $.extend({}, Collapse.DEFAULTS, $this.data(), typeof option == 'object' && option)
 
       if (!data) $this.data('bs.collapse', (data = new Collapse(this, options)))
@@ -148,7 +143,7 @@
   // COLLAPSE NO CONFLICT
   // ====================
 
-  $.fn.collapse.noConflict = function () {
+  $.fn.collapse.noConflict = function() {
     $.fn.collapse = old
     return this
   }
@@ -157,15 +152,14 @@
   // COLLAPSE DATA-API
   // =================
 
-  $(document).on('click.bs.collapse.data-api', '[data-toggle=collapse]', function (e) {
-    var $this   = $(this), href
-    var target  = $this.attr('data-target')
-        || e.preventDefault()
-        || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') //strip for ie7
+  $(document).on('click.bs.collapse.data-api', '[data-toggle=collapse]', function(e) {
+    var $this = $(this),
+      href
+    var target = $this.attr('data-target') || e.preventDefault() || (href = $this.attr('href')) && href.replace(/.*(?=#[^\s]+$)/, '') //strip for ie7
     var $target = $(target)
-    var data    = $target.data('bs.collapse')
-    var option  = data ? 'toggle' : $this.data()
-    var parent  = $this.attr('data-parent')
+    var data = $target.data('bs.collapse')
+    var option = data ? 'toggle' : $this.data()
+    var parent = $this.attr('data-parent')
     var $parent = parent && $(parent)
 
     if (!data || !data.transitioning) {

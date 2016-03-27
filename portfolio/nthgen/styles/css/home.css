@@ -514,7 +514,9 @@
 #static-intro #split-screen #split-footer .arrow-up span:hover {
   color: #fff;
 }
+
 /* Team */
+
 #team-intro {
   color: #0163c6;
   padding: 20px 0px;
@@ -776,7 +778,9 @@
   color: #262626;
   transition: color 0.5s ease;
 }
+
 /* Stats Row */
+
 #stats-container {
   background-color: #0060c9;
   color: #fff;
@@ -869,8 +873,7 @@
   }
 }
 @media screen and (max-width: 540px) {
-  #stats-container #stats .stat .stat-symbol .icon-code-brackets,
-  #stats-container #stats .stat .stat-symbol .icon-controller {
+  #stats-container #stats .stat .stat-symbol .icon-code-brackets, #stats-container #stats .stat .stat-symbol .icon-controller {
     font-size: 35px;
   }
 }
@@ -1007,7 +1010,9 @@
     margin-left: -2px;
   }
 }
+
 /* TradeRev Row */
+
 #traderev {
   background-color: #000;
   background-image: url(../../images/product-car-bg.jpg);
@@ -1180,7 +1185,9 @@
 #traderev .traderev-container:hover .traderev-info .description div a {
   opacity: 1;
 }
+
 /* Products Row */
+
 #products-intro {
   padding: 70px;
   text-transform: uppercase;
@@ -1261,7 +1268,9 @@
     margin: 0px;
   }
 }
+
 /* Map */
+
 #map {
   height: 400px;
 }
@@ -1270,7 +1279,9 @@
     height: 200px;
   }
 }
+
 /* Contact Row */
+
 #contact {
   position: relative;
   height: 600px;

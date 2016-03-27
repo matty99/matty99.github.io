@@ -1,5 +1,5 @@
 // Collapse mobile menu when a link is clicked
-$(function() {  
+$(function() {
   $("#top-nav-collapse ul li a").each(function() {
     $(this).click(function() {
       if ($("#top-nav-collapse").hasClass("in")) $("#top-nav-collapse").addClass("collapse").removeClass("in");
@@ -60,10 +60,12 @@ function spanWrapEach(element) {
 
 // Create a static anchor point on the page
 function createAnchorPoint(a_id, position) {
-  var anchor = $("<div>", {id: a_id});
+  var anchor = $("<div>", {
+    id: a_id
+  });
   anchor.css({
-    "position" : "absolute",
-    "top" :  position + "px",
+    "position": "absolute",
+    "top": position + "px",
   });
   $("body").append(anchor);
 }
