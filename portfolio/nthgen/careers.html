@@ -5,24 +5,15 @@
   <title>NthGen Software Inc.</title>
 
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-  <!--[if lt IE 9]>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <![endif]-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css">
-  <!-- Custom Icons -->
-  <link rel="stylesheet" type="text/css" href="lib/icomoon/style.css">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" type="text/css" href="styles/css/base.css" />
-  <link rel="stylesheet" type="text/css" href="styles/css/career.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/icomoon/style.css">
+  <link rel="stylesheet" href="styles/css/base.css" />
+  <link rel="stylesheet" href="styles/css/career.css" />
 </head>
 
 <body>
@@ -323,7 +314,7 @@
                 }
               </style>
             </div>
-            <script type="text/javascript">
+            <script>
               function init_map() {
                 var myOptions = {
                   zoom: 17,
@@ -428,7 +419,7 @@
   <script src="scripts/tools.js"></script>
 
   <!-- Templates -->
-  <script type="text/javascript">
+  <script>
     $(function() {
       $.get("json/careers.json", function(data) {
         $("#body .wrapper").html(Mustache.render('{{#posts}}<div class="post">{{{.}}}</div>{{/posts}}', data));
