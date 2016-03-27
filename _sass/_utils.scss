@@ -16,38 +16,18 @@ $company-logo-size: 50px;
   padding: 0;
   li {
     float: left;
-    font-size: 11px;
+    font-size: 8px;
   }
 }
 .post-tag {
-  background: $background-color;
-  border-radius: 3px 0 0 3px;
-  color: $grey-color;
+  background: $grey-color;
+  border-radius: 5px;
+  color: $background-color;
   display: inline-block;
-  height: 26px;
-  line-height: 26px;
-  margin: 0 10px 10px 0;
-  padding: 0 20px 0 23px;
+  height: 20px;
+  line-height: 20px;
+  margin-right: 10px;
+  padding: 0 20px;
   position: relative;
   text-decoration: none;
-}
-.post-tag::before {
-  background: $background-color;
-  border-radius: 10px;
-  content: '';
-  height: 6px;
-  left: 10px;
-  position: absolute;
-  top: 10px;
-  width: 6px;
-}
-.post-tag::after {
-  background: $background-color;
-  border-bottom: 13px solid transparent;
-  border-left: 10px solid $background-color;
-  border-top: 13px solid transparent;
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
 }
