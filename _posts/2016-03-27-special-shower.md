@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The worst shower design I've ever seen"
+title: "Bad shower design"
 description: A story about a terrible shower design.
 tags:
 - Design
