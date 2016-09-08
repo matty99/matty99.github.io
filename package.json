@@ -4,6 +4,7 @@
   "description": "A website displaying my work",
   "devDependencies": {
     "gulp": "^3.9.0",
+    "gulp-imagemin": "^3.0.1",
     "imagemin-pngcrush": "^4.1.0",
     "imagemin-pngquant": "^4.2.0"
   },
