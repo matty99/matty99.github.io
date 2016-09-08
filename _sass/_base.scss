@@ -1,4 +1,4 @@
-// Reset some basic elements
+/* Reset some basic elements*/
 blockquote,
 body,
 dd,
@@ -18,7 +18,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-// Basic styling
+/* Basic styling*/
 body {
   background-color: $background-color;
   color: $text-color;
@@ -28,7 +28,7 @@ body {
   line-height: $base-line-height;
   -webkit-text-size-adjust: 100%;
 }
-// Set `margin-bottom` to maintain vertical rhythm
+/* Set `margin-bottom` to maintain vertical rhythm*/
 %vertical-rhythm,
 blockquote,
 dl,
@@ -45,19 +45,19 @@ pre,
 ul {
   margin-bottom: $spacing-unit / 2;
 }
-// Images
+/* Images*/
 img {
   max-width: 100%;
   vertical-align: middle;
 }
-// Figures
+/* Figures*/
 figure > img {
   display: block;
 }
 figcaption {
   font-size: $small-font-size;
 }
-// Lists
+/* Lists*/
 ol,
 ul {
   margin-left: $spacing-unit;
@@ -68,7 +68,7 @@ li {
     margin-bottom: 0;
   }
 }
-// Headings
+/* Headings*/
 h1,
 h2,
 h3,
@@ -77,7 +77,7 @@ h5,
 h6 {
   font-weight: 300;
 }
-// `Links
+/* `Links*/
 a {
   color: $brand-color;
   text-decoration: none;
@@ -89,7 +89,7 @@ a {
     text-decoration: underline;
   }
 }
-// Blockquotes
+/* Blockquotes*/
 blockquote {
   border-left: 4px solid $grey-color-light;
   color: $grey-color;
@@ -101,7 +101,7 @@ blockquote {
     margin-bottom: 0;
   }
 }
-// Code formatting
+/* Code formatting*/
 code,
 pre {
   background-color: $background-color;
@@ -122,9 +122,8 @@ pre {
     padding-right: 0;
   }
 }
-// Wrapper
+/* Wrapper*/
 .wrapper {
-  max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
   max-width: calc(800px - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
@@ -132,13 +131,12 @@ pre {
   padding-left: $spacing-unit;
   @extend %clearfix;
   @include media-query($on-laptop) {
-    max-width: -webkit-calc(800px - (#{$spacing-unit}));
     max-width: calc(800px - (#{$spacing-unit}));
     padding-left: $spacing-unit / 2;
     padding-right: $spacing-unit / 2;
   }
 }
-// Clearfix
+/* Clearfix*/
 %clearfix {
   &::after {
     clear: both;
@@ -146,7 +144,7 @@ pre {
     display: table;
   }
 }
-// Icons
+/* Icons*/
 .icon {
   > svg {
     display: inline-block;
