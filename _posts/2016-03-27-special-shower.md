@@ -22,6 +22,6 @@ You may be thinking, that's not that bad, seems like a normal shower. That's the
 
 The problem? The motion sensor. The same sensor turns the shower on and off. I don't know anyone who stands perfectly still while showering, which means the water keeps stopping and starting, even while drying off.
 
-German things are normally really well thought out, so it really caught me off guard when this shower was so poorly designed.
+Things from Germany things are normally really well thought out, so it really caught me off guard when this shower was so poorly designed.
 
 Please think through your designs. Everything you make matters.

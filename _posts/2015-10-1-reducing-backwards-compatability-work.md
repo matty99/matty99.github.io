@@ -21,7 +21,7 @@ I did one thing to achieve these results, and one thing only. I starting using a
 
 ### What's my point?
 
-I accomplished this in 5 minutes of work. Not only that, but I was ready to add backwards compatibility to my site to support these users, but instead I got them to update. This means I don't need to add any border radius hacks, transparency hacks, or any other crap to my site.
+I accomplished this in 5 minutes of work. Not only that, but I was ready to add backwards compatibility to my site to support these users, but instead I got them to update. This means I don't need to add any border radius hacks, transparency hacks, or anything similar to my site.
 
 The high conversion rates I saw also indicates that it's likely my users didn't even know they were out of date until the plug-in I added told them to update.
 

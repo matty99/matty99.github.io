@@ -14,7 +14,7 @@ There are lots of arguments against Ad-blockers and blockers in general, people 
 
 ### Pop-ups and the return of pop-ups
 
-I remember many years ago every time you were done browsing the web you would close your browser and then you would have to also close anywhere from 3-10 ad windows as well.
+I remember many years ago every time you were done browsing the web you would close your browser and then you would have to also close anywhere from 3 to 10 ad windows as well.
 
 Or you would visit a site and immediately you would be bombarded by pop-ups. Closing those windows would spawn new pop-up windows.
 
@@ -68,9 +68,9 @@ How many times have you visited a download page and seen more than one download 
 
 Here are a few concrete examples of this happening:
 - LinkedIn started selling resume skills to recruiters. In fact it just became the source of endless recruiter spam so I just left.
-- Facebook started lying on your news feed about things your friends did. Your friend liked this. Your friend looked at this. No they didn't, that's bullshit. My news feed became just lies several days in a row, so I just left.
+- Facebook started lying on your news feed about things your friends did. Saying things like "Your friend liked this" or "Your friend read this." My news feed became filled with these lies several days in a row, so I just left.
 
-I find it pretty awful that companies are profiting off the data that I publicize about myself. I can no longer go to a site and enter in any information about myself without second guessing.
+I find it pretty awful that companies are profiting off the data that I publicize about myself. I can no longer go to a site and enter any information about myself without second guessing.
 
 ### Browser fingerprinting
 
