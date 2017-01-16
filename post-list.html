@@ -13,11 +13,6 @@ permalink: /blog/
         <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
       </h2>
       <p>{{ post.description }}</p>
-      <ul class="post-tags">
-        {% for tag in post.tags %}
-        <li class="post-tag">{{ tag }}</li>
-        {% endfor %}
-      </ul>
     </li>
     {% endfor %}
   </ul>

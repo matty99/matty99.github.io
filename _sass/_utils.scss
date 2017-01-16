@@ -8,26 +8,3 @@ $company-logo-size: 50px;
   padding: 15px;
   width: $company-logo-size;
 }
-/* Post Tags*/
-.post-tags {
-  list-style: none;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  li {
-    float: left;
-    font-size: 8px;
-  }
-}
-.post-tag {
-  background: $grey-color;
-  border-radius: 5px;
-  color: $background-color;
-  display: inline-block;
-  height: 20px;
-  line-height: 20px;
-  margin-right: 10px;
-  padding: 0 20px;
-  position: relative;
-  text-decoration: none;
-}
