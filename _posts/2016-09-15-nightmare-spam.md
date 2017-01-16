@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I have a bad feeling about this"
-description: They promised it was for security!
+description: They promised 2-factor authorization was just for security!
 tags:
 - Spam
 - Security
