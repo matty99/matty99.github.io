@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Blog
-permalink: /blog/
+title: Portfolio
+permalink: /portfolio/
 ---
 
-{% for post in site.posts %}
+{% for post in site.categories.portfolio %}
 <article class="post">
   <header>
     <time class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</time>
