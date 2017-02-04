@@ -1,10 +1,7 @@
-/* Site header*/
+/* Header */
 .site-header {
   border-bottom: 1px solid $grey-color-light;
-  border-top: 5px solid $grey-color-dark;
   min-height: 56px;
-  /* Positioning context for the mobile navigation icon*/
-  position: relative;
 }
 .site-title {
   float: left;
@@ -12,10 +9,6 @@
   letter-spacing: -1px;
   line-height: 56px;
   margin-bottom: 0;
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
 }
 .site-nav {
   float: right;
@@ -26,41 +19,42 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
-    /* Gaps between nav items, but not on the first one*/
+    /* Gaps between nav items, but not on the first one */
     &:not(:first-child) {
       margin-left: 20px;
     }
   }
 }
-/* Page content*/
+
+/* Post list */
 .page-content {
   padding: $spacing-unit 0;
 }
 .page-heading {
   font-size: 20px;
 }
-.post-list {
-  list-style: none;
-  margin-left: 0;
-  > li {
-    margin-bottom: $spacing-unit;
-  }
+.post {
+  padding-bottom: $spacing-unit;
 }
 .post-meta {
   color: $grey-color;
-  font-size: $small-font-size;
+  font-size: 0.6875rem;
+  font-weight: bold;
+  padding-bottom: 2.75px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .post-link {
-  display: block;
-  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
+
 /* Posts*/
 .post-header {
   margin-bottom: $spacing-unit;
 }
 .post-title {
   font-size: 42px;
-  letter-spacing: -1px;
   line-height: 1;
   @include media-query($on-laptop) {
     font-size: 36px;
