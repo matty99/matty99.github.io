@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Why I openly admit to using an Ad-blocker"
-description: Adding to the content creator vs. ad-block discussion
+title: "I'll gladly admit to using an ad-blocker and encourage others to do it too"
+description: Adding to the content creator vs. ad-block user discussion
 tags:
 - Ad-block
 - State of the web

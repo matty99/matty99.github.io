@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "How 5 minutes of work saved me hours of work"
-description: A short trick to reduce the amount of backwards compatibility work you have to do for your site.
+title: "Looking at analytics saved me hours of backwards compatibility work"
+description: A small add-on for your site might be able to save you some time and work as well.
 tags:
 - Web development
 - Front end development
@@ -25,7 +25,7 @@ I accomplished this in 5 minutes of work. Not only that, but I was ready to add 
 
 The high conversion rates I saw also indicates that it's likely my users didn't even know they were out of date until the plug-in I added told them to update.
 
-How do I know it was me and not something else? This is a graph of Firefox 39 usage vs Firefox 40 usage plotted over a graph of overall Firefox usage. It almost shows the exact day I made the commit.
+How do I know it was me and not something else? Obviously I don't know for sure, but the data convinces me I had some say in the matter. This graph of Firefox 39 usage vs Firefox 40 usage plotted over a graph of overall Firefox usage almost shows the exact day I made the commit.
 ![Mozilla Usage](/images/posts/mozilla-usage.png)
 
 

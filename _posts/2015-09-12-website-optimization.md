@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Website Optimization"
-description: A flashback to a website I build over a year ago. I go over the code explaining where I went wrong and offering improvements. The focus of the series is page speed optimizations.
+description: A flashback to a website I built over a year ago. I go over the code explaining where I went wrong and offering improvements. A lot of the improvements aren't even code related!
 tags:
 - Web development
 - Front end development

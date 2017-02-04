@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What happens when designs fail"
+title: "What happens when designs fail?"
 description: A short glance into how users react when your application does something unexpected.
 tags:
 - Design

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bad shower design"
-description: A story about a terrible shower design.
+description: A story about my experience using a terrible shower. I'll never forget it and I'll never go back.
 tags:
 - Design
 - Rant

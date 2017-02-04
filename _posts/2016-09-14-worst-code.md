@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "The hackiest code I've written so far"
-description: Bad code I wrote and an explanation of why it was written.
+title: "The hackiest code I have ever written"
+description: Bad code I wrote and some explanation as to why it was written.
 tags:
 - Web development
 - Javascript
