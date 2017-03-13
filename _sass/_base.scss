@@ -1,154 +1,35 @@
-/* Reset some basic elements*/
-blockquote,
-body,
-dd,
-dl,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-ol,
-p,
-pre,
-ul {
-  margin: 0;
-  padding: 0;
-}
-/* Basic styling*/
+//== Base styles
 body {
   background-color: $background-color;
   color: $text-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
   font-weight: 300;
-  line-height: $base-line-height;
+  line-height: $line-height-base;
   -webkit-text-size-adjust: 100%;
 }
-/* Set `margin-bottom` to maintain vertical rhythm*/
-%vertical-rhythm,
-blockquote,
-dl,
-figure,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ol,
-p,
-pre,
-ul {
-  margin-bottom: $spacing-unit / 2;
+
+//== Headings
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $font-family-base;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
 }
-/* Images*/
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-/* Figures*/
-figure > img {
-  display: block;
-}
-figcaption {
-  font-size: $small-font-size;
-}
-/* Lists*/
-ol,
-ul {
-  margin-left: $spacing-unit;
-}
-li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
-}
-/* Headings*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 300;
-}
-/* `Links*/
+
+h1 { font-size: $font-size-h1; }
+h2 { font-size: $font-size-h2; }
+h3 { font-size: $font-size-h3; }
+h4 { font-size: $font-size-h4; }
+h5 { font-size: $font-size-h5; }
+h6 { font-size: $font-size-h6; }
+
+//== Links
 a {
   color: $text-color;
   text-decoration: none;
+
   &:hover {
     text-decoration: underline;
-  }
-}
-/* Blockquotes*/
-blockquote {
-  border-left: 4px solid $grey-color-light;
-  color: $grey-color;
-  font-size: 18px;
-  font-style: italic;
-  letter-spacing: -1px;
-  padding-left: $spacing-unit / 2;
-  > :last-child {
-    margin-bottom: 0;
-  }
-}
-/* Code formatting*/
-code,
-pre {
-  background-color: $background-color;
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-  font-size: 15px;
-  overflow-x: hidden;
-}
-code {
-  padding: 1px 5px;
-}
-pre {
-  overflow-x: scroll;
-  padding: 8px 12px;
-  > code {
-    border: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-/* Wrapper*/
-.wrapper {
-  max-width: calc(800px - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-  @include media-query($on-laptop) {
-    max-width: calc(800px - (#{$spacing-unit}));
-    padding-left: $spacing-unit / 2;
-    padding-right: $spacing-unit / 2;
-  }
-}
-/* Clearfix*/
-%clearfix {
-  &::after {
-    clear: both;
-    content: '';
-    display: table;
-  }
-}
-/* Icons*/
-.icon {
-  > svg {
-    display: inline-block;
-    height: 16px;
-    vertical-align: middle;
-    width: 16px;
-    path {
-      fill: $grey-color;
-    }
   }
 }

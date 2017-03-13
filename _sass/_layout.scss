@@ -1,83 +1,22 @@
-/* Header */
-.site-header {
-  border-bottom: 1px solid $grey-color-light;
-  min-height: 56px;
-}
-.site-title {
-  float: left;
-  font-size: 26px;
-  letter-spacing: -1px;
-  line-height: 56px;
-  margin-bottom: 0;
-}
-.site-nav {
-  float: right;
-  line-height: 56px;
-  .menu-icon {
-    display: none;
-  }
-  .page-link {
-    color: $text-color;
-    line-height: $base-line-height;
-    /* Gaps between nav items, but not on the first one */
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
-  }
-}
-
-/* Post list */
-.page-content {
-  padding: $spacing-unit 0;
-}
-.page-heading {
-  font-size: 20px;
-}
-.post {
-  padding-bottom: $spacing-unit;
-}
-.post-meta {
-  color: $grey-color;
-  font-size: 0.6875rem;
-  font-weight: bold;
-  padding-bottom: 2.75px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.post-link {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-/* Posts*/
-.post-header {
-  margin-bottom: $spacing-unit;
-}
-.post-title {
-  font-size: 42px;
-  line-height: 1;
+//== Layout
+.wrapper {
+  max-width: calc(800px - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
   @include media-query($on-laptop) {
-    font-size: 36px;
+    max-width: calc(800px - (#{$spacing-unit}));
+    padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
   }
 }
-.post-content {
-  margin-bottom: $spacing-unit;
-  h2 {
-    font-size: 32px;
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
-  }
-  h3 {
-    font-size: 26px;
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
-  }
-  h4 {
-    font-size: 20px;
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
+
+%clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
   }
 }

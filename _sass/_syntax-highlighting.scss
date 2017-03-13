@@ -1,7 +1,29 @@
-/* Syntax highlighting styles*/
+//== Code formatting
+code,
+pre {
+  background-color: $background-color;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+code {
+  padding: 1px 5px;
+}
+pre {
+  overflow-x: scroll;
+  padding: 8px 12px;
+  > code {
+    border: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+//== Syntax highlighting
 .highlight {
   background: #fff;
-  @extend %vertical-rhythm;
+  margin-bottom: $spacing-unit / 2;
   .bp    { color: #999 } /* Name.Builtin.Pseudo*/
   .c     { color: #998; font-style: italic } /* Comment*/
   .c1    { color: #998; font-style: italic } /* Comment.Single*/

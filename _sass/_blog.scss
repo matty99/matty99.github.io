@@ -1,0 +1,55 @@
+/* Post list */
+.page-content {
+  padding: $spacing-unit 0;
+}
+.page-heading {
+  font-size: 20px;
+}
+.post {
+  padding-bottom: $spacing-unit;
+}
+.post-meta {
+  color: $grey-color;
+  font-size: 0.6875rem;
+  font-weight: bold;
+  padding-bottom: 2.75px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.post-link {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+/* Posts*/
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+.post-title {
+  font-size: 42px;
+  line-height: 1;
+  @include media-query($on-laptop) {
+    font-size: 36px;
+  }
+}
+.post-content {
+  margin-bottom: $spacing-unit;
+  h2 {
+    font-size: 32px;
+    @include media-query($on-laptop) {
+      font-size: 28px;
+    }
+  }
+  h3 {
+    font-size: 26px;
+    @include media-query($on-laptop) {
+      font-size: 22px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    @include media-query($on-laptop) {
+      font-size: 18px;
+    }
+  }
+}

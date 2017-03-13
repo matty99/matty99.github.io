@@ -1,0 +1,23 @@
+.site-header {
+  border-bottom: 1px solid $grey-color-light;
+  padding: $spacing-unit 0;
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.site-title {
+  flex-grow: 1;
+  font-size: $font-size-h3;
+}
+.site-nav {
+  width: 200px;
+}
+.page-link {
+  /* Gaps between nav items, but not on the first one */
+  &:not(:first-child) {
+    margin-left: $spacing-unit;
+  }
+}
