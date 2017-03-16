@@ -4,9 +4,8 @@ title: Portfolio
 permalink: /portfolio/
 ---
 
-{% for post in site.categories.blog %}
+{% for post in site.categories.portfolio %}
 <article class="blog-post">
-  <time class="blog-post__date">{{ post.date | date: "%B %-d, %Y" }}</time>
   <a class="blog-post__title" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
   <p class="blog-post__description">{{ post.description }}</p>
 </article>
