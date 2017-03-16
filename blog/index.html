@@ -5,15 +5,9 @@ permalink: /blog/
 ---
 
 {% for post in site.categories.blog %}
-<article class="post">
-  <header>
-    <time class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</time>
-    <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
-    </h2>
-  </header>
-  <div class="entry-body">
-    <p class="post-description">{{ post.description }}</p>
-  </div>
+<article class="blog-post">
+  <time class="blog-post__date">{{ post.date | date: "%B %-d, %Y" }}</time>
+  <a class="blog-post__title" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+  <p class="blog-post__description">{{ post.description }}</p>
 </article>
 {% endfor %}

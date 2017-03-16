@@ -2,23 +2,27 @@
 .page-content {
   padding: $spacing-unit 0;
 }
-.page-heading {
-  font-size: 20px;
-}
-.post {
-  padding-bottom: $spacing-unit;
-}
-.post-meta {
-  color: $grey-color;
-  font-size: 0.6875rem;
-  font-weight: bold;
-  padding-bottom: 2.75px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-.post-link {
-  font-size: 1.5rem;
-  line-height: 2rem;
+
+.blog-post {
+  padding: $spacing-unit 0;
+
+  &__date {
+    color: $grey-color;
+    font-size: 0.6875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  &__description {
+    margin: 10px 0;
+  }
 }
 
 /* Posts*/
