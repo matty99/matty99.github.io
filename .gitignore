@@ -4,3 +4,4 @@ _drafts/
 node_modules
 portfolio/*/node_modules
 npm-debug.log
+.bundle
