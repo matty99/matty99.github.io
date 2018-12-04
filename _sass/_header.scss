@@ -12,12 +12,6 @@
   flex-grow: 1;
   font-size: $font-size-h3;
 }
-.site-nav {
-  width: 200px;
-}
 .page-link {
-  /* Gaps between nav items, but not on the first one */
-  &:not(:first-child) {
-    margin-left: $spacing-unit;
-  }
+  margin: $spacing-unit / 2;
 }
