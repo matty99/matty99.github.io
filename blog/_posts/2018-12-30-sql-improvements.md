@@ -24,7 +24,6 @@ LIMIT 100
 In just this small query there are already quite a few performance issues.
 
 1. The `LIMIT` is applied at the end of the query, which means if either the business, employees, or customers tables contain a large number of records, the query will run for quite some time before being truncated at the 100 row mark in the last step. Ideally the joins are just calculated on 100 records, that is the `LIMIT` is applied early on in the query calculation. This is of course achievable through alternate syntax, but it would be nice if it worked in this simple syntax as well. Ideally it behaves more like the following:
-
 ```
 ...
 JOIN (
@@ -51,10 +50,9 @@ JOIN (
 
 3. The final suggestion is more about a feature I wish existed when it came to working with `LIMIT` and `JOIN`. Assume that there are on average about 3 employees in a business and about 2 customers per employee, then it would be great if you could apply a limit to the queries within a `JOIN`. An example would be the following syntax:
 ```
-SELECT b.id, e.id, c.id  FROM business b
+SELECT b.id, e.id, c.id  FROM business b LIMIT 100
 JOIN employees e ON e.buisness_id = b.id LIMIT 300
 JOIN customers c ON c.employee_contact_id = e.id LIMIT 600
-LIMIT 100
 ```
 
 Having any one of these 3 suggestions implemented in the language would be a great quality of life improvement for my team. I wonder if other heavy SQL users out there would benefit the same way. Looking forward to the discussions this brings up.
