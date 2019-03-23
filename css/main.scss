@@ -8,6 +8,9 @@ $font-family-base:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-base:    16px;
 $line-height-base:  1.5rem;
 
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-concert-one: 'Concert One', cursive;
+
 $font-size-h1: floor(($font-size-base * 2.6));
 $font-size-h2: floor(($font-size-base * 2.15));
 $font-size-h3: ceil(($font-size-base * 1.7));
@@ -15,9 +18,9 @@ $font-size-h4: ceil(($font-size-base * 1.25));
 $font-size-h5: $font-size-base;
 $font-size-h6: ceil(($font-size-base * 0.85));
 
-$headings-margin-bottom: 0.75rem;
-$headings-font-weight:   500;
-$headings-line-height:   1.1;
+$headings-margin: 0.75rem;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
 
 // TODO: Refactor font sizes
 $small-font-size: $font-size-base * 0.875;
@@ -31,7 +34,7 @@ $background-color: #fdfdfd;
 $brand-color: #2079c7;
 $grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark: darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 18%);
 
 // TODO: Refactor colours
 $gray-base:              #000;
