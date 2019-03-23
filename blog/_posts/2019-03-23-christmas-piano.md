@@ -31,7 +31,7 @@ Got in the car, allegro down the road, he hoped to bring it back into his humble
 "Does it still work? Does it still sing? Does every note still ring the right ring?"  
 "It works just fine! I'm simply switching careers. Saving for a PC to start streaming new year."  
 "Would you like to hear a song?" as he started to play,  
-"Moonlight sonata? That seems off. The sun is still out."
+"Moonlight sonata? That seems wrong. The sun is still out."
 
 *&lsaquo;&lsaquo;instrumental interlude&rsaquo;&rsaquo;*  
 
