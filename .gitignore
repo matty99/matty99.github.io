@@ -2,6 +2,5 @@ _site/
 _drafts/
 .sass-cache/
 node_modules
-portfolio/*/node_modules
 npm-debug.log
 .bundle
