@@ -39,7 +39,7 @@ Got in the car, allegro down the road, he hoped to bring it back into his humble
 "Excellent mister! She'll love it, I'll bet"
 
 He drove everything back, and parked out front. Now to get it inside, a bit of a stunt.  
-Takes a quick peak home to make sure no one's in, then right back downstairs with a mighty big grin.  
+Takes a quick peek home to make sure no one's in, then right back downstairs with a mighty big grin.  
 Piece by piece he brought up each part, had gotten it down to somewhat an art.  
 Stocatto downstairs, he was having a ball, lento back up to avoid major fall.
 
