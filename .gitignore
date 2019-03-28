@@ -1,6 +1,7 @@
-_site/
 _drafts/
-.sass-cache/
+_site
+.bundle
+.jekyll-metadata
+.sass-cache
 node_modules
 npm-debug.log
-.bundle
