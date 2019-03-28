@@ -12,9 +12,6 @@
     "type": "git",
     "url": "https://github.com/mrstork/mrstork.github.io.git"
   },
-  "scripts": {
-    "start": "bundle exec jekyll serve --config _config_dev.yml"
-  },
   "author": "Mateusz Bocian",
-  "homepage": "mrstork.github.io"
+  "homepage": "https://mrstork.github.io"
 }
