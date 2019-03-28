@@ -7,12 +7,15 @@ pre {
   font-size: 15px;
   overflow-x: hidden;
 }
+
 code {
   padding: 1px 5px;
 }
+
 pre {
   overflow-x: scroll;
   padding: 8px 12px;
+
   > code {
     border: 0;
     padding-left: 0;

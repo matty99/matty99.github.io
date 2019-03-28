@@ -8,15 +8,18 @@
     justify-content: space-between;
   }
 }
+
 .site-title {
   flex-grow: 1;
   font-size: $font-size-h3;
 }
+
 .site-nav {
   display: flex;
   justify-content: space-between;
   width: 110px;
 }
+
 .page-link {
   margin: $spacing-unit / 2;
 }
