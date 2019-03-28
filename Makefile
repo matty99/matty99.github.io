@@ -4,6 +4,9 @@ help:
 start: ## Start local development server
 	bundle exec jekyll serve --config _config_dev.yml
 
+minify-images: ## Minify post images and logos in the images directory
+	node_modules/.bin/gulp images
+
 blog-post: ## Create new post in blog folder
 	touch blog/_posts/`date +%Y-%m-%d`-new-post.md
 
@@ -14,5 +17,5 @@ ramen-post: ## Create new post in ramen folder
 	@# Helper for `manage`
 	@:
 
-.PHONY: help start blog-post ramen-post
+.PHONY: help start minify-images blog-post ramen-post
 .DEFAULT_GOAL := help
