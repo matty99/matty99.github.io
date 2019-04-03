@@ -2,13 +2,9 @@
   <div class="wrapper">
     <a class="site-title" href="{{ site.url }}/">{{ site.title }}</a>
     <nav class="site-nav">
-      {% for page in site.pages %}
-        {% if page.title %}
-        <a class="page-link" href="{{ page.url | prepend: site.url }}">
-          {{ page.title }}
-        </a>
-        {% endif %}
-      {% endfor %}
+      <a class="page-link" href="{{ '/' | prepend: site.url }}">Resume</a>
+      <a class="page-link" href="{{ '/blog/' | prepend: site.url }}">Blog</a>
+      <a class="page-link" href="{{ '/ramen/' | prepend: site.url }}">Ramen</a>
     </nav>
   </div>
 </header>

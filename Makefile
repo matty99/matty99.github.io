@@ -5,7 +5,7 @@ start: ## Start local development server
 	bundle exec jekyll serve --config _config_dev.yml
 
 minify-images: ## Minify post images and logos in the images directory
-	node_modules/.bin/gulp images
+	node_modules/.bin/gulp images ## TODO: move to pure command line
 
 blog-post: ## Create new post in blog folder
 	touch blog/_posts/`date +%Y-%m-%d`-new-post.md

@@ -1,0 +1,13 @@
+---
+layout: default
+title: Ramen
+permalink: /ramen/
+---
+
+{% for post in site.categories.ramen %}
+<article class="blog-post">
+  <time class="blog-post__date">{{ post.date | date: "%B %-d, %Y" }}</time>
+  <a class="blog-post__title" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+  <p class="blog-post__description">{{ post.description }}</p>
+</article>
+{% endfor %}
