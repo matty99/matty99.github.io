@@ -8,7 +8,7 @@ date: 2019-04-03
 ![Teumsae Ramyun](/images/ramen/teumsae-ramyun.jpg)
 
 Approximate price: $1.50  
-2 packets - 1 vegetable and 1 soup base
+2 packets - 1 vegetable, 1 soup base
 
 I was expecting a tomato based soup because at first glance I thought the vegetable on the cover was a tomato, but upon closer examination it turns out it's a big ol' mushroom and I'm in for a spicy ride. You'd think the red packaging would have tipped me off...
 
