@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nissin Demae Ramen - Pork"
-description: Spicy Jalapeno Chicken Ramen
+description: Tonkotsu Ramen
 date: 2019-04-18
 ---
 
@@ -26,7 +26,7 @@ The noodles continue to be very standard, however they swelled up and absorbed a
 
 Now the broth alone, followed by any notes about eating the broth and noodles together.
 
-I was pleasantly surprised by the soup. Part of this probably came from my prejudice of eating an 88 cent packet of ramen, but it really is quite yummy. One negative while eating the soup is that a certain oily note really sticks out, and I will go ahead and say it's just too oily. Ramen tends to do well with a good amount of fat, it just does need to be the right kind of fat. The oil seems to be just some kind of basic canola that's shown up just by accident, possibly from the deep fried noodles. Beyond that, the soup does mimic a tonkotsu broth really quite well. I'd bet if you somehow managed to get a fuller, more authentic taste to the broth, it would do quite well in Toronto's restaurant ramen scene.
+I was pleasantly surprised by the soup. Part of this probably came from my prejudice of eating an 88 cent packet of ramen, but it really is quite yummy. One negative while eating the soup is that a certain oily note really sticks out, and I will go ahead and say it's just too oily. Ramen tends to do well with a good amount of fat, it just does need to be the right kind of fat. The oil seems to be just some kind of basic canola that's shown up just by accident, possibly from the deep fried noodles. Beyond that, the soup does mimic a tonkotsu broth really quite well. I do say mimic though, because it's missing a certain fullness to the flavour. I'd bet if you somehow managed to get a fuller, more authentic taste to the broth, it would do quite well in Toronto's restaurant ramen scene.
 
 Finally, we summarize the experience and mention any afterthoughts. This is often where I comment on the salt and MSG levels in the broth because by this point I've usually finished the bowl which is when I realize "oh my! that's a lot of salt I just had there". I might mention some toppings that I think might pair well with the soup, but I always eat the packet without adding anything extra in as I've decided to critique the product for what it is, not what it could be.
 
