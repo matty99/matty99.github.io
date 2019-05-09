@@ -8,7 +8,7 @@ date: 2019-04-18
 ![Nissin Demae Ramen - Pork](/images/ramen/nissin-damae-ramen-pork.jpg)
 
 Approximate price: $0.88  
-2 packets - 1 soup base, 1 seasoning sauce
+2 packets - 1 soup base, 1 liquid seasoning
 
 Now that I've written and released two reviews, it's time to give you a little introduction and tell you what this is all about.
 
