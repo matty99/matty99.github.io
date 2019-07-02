@@ -7,7 +7,7 @@ date: 2019-06-20
 
 ![Maruchan Gyusuki Udon](/images/ramen/maruchan-gyusuki-udon.jpg)
 
-Approximate price: $2.50
+Approximate price: $2.50  
 2 packets - 1 beef and veg, 1 soup base
 
 Welcome to another best-before date forced review. These deadlines are turning out to be good motivators.
