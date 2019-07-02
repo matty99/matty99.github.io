@@ -1,0 +1,17 @@
+.author {
+  padding: 20px 5px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+  .avatar {
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+  }
+  .name {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
