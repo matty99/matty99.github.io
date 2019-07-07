@@ -4,22 +4,22 @@
 
   .wrapper {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
 }
 
 .site-title {
-  flex-grow: 1;
   font-size: $font-size-h3;
 }
 
 .site-nav {
   display: flex;
   justify-content: space-between;
-  width: 110px;
-}
+  margin-top: $spacing-unit;
 
-.page-link {
-  margin: $spacing-unit / 2;
+  .page-link {
+    margin: $spacing-unit / 2;
+  }
 }
