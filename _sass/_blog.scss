@@ -14,16 +14,15 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding-left: 2px;
   }
 
   &__title {
     display: block;
-    font-size: 1.4rem;
-    line-height: 2rem;
+    font-size: $font-size-h4;
   }
 
   &__description {
-    display: block;
     margin-top: 4px;
   }
 }
@@ -34,34 +33,13 @@
 }
 
 .post-title {
-  font-size: 42px;
-  line-height: 1;
-  @include media-query($on-laptop) {
-    font-size: 36px;
-  }
+  font-size: $font-size-h3;
 }
 
 .post-content {
   margin-bottom: $spacing-unit;
 
-  h2 {
-    font-size: 32px;
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
-  }
-
-  h3 {
-    font-size: 26px;
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
+  img {
+    max-width: 100%;
   }
 }
