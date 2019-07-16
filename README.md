@@ -1,5 +1,17 @@
-An online version of my resume and a home for my writing
+### Resume and Blog
 
-Built on Jekyll and hosted on GitHub Pages - access at https://mrstork.github.io
+Built in Jekyll and hosted on GitHub Pages - https://mrstork.github.io
 
-To run locally, use `make start`
+### Setup
+
+```
+sudo apt update
+
+sudo apt install ruby-full
+sudo apt install jpegoptim optipng
+sudo apt install hunspell-en-ca
+
+gem install bundler
+bundle install
+make start
+```
