@@ -16,7 +16,7 @@ The first thing that strikes me about the soup before even trying it is the smel
 
 Noodles are really chewy and lots fun to slurp. No where near the bottom end of noodles, but lacking a little something from becoming a top tier packet noodle.
 
-Floating around I see chilli peppers, green onion, and chicken bits? Whenever I see meat in a ramen packet soup I'm always a bit surprised and a little relieved at the same time. Sort of like an "Oh! They used real ingredients to make this!"
+Floating around I see chili peppers, green onion, and chicken bits? Whenever I see meat in a ramen packet soup I'm always a bit surprised and a little relieved at the same time. Sort of like an "Oh! They used real ingredients to make this!"
 
 That strong jalapeno flavour comes through in the first bite, reminiscent of a bag of Miss Vickie's chips, backed by a lingering familiar and nostalgic chicken noodle soup flavour. I say nostalgic because when I was growing up, whenever someone in my family was sick they would get a bowl of Lipton chicken noodle soup. It's that same familiar taste with the added light heat from the jalapenos. A very comfortable bowl for me to eat, probably because of how used to the taste I am.
 
