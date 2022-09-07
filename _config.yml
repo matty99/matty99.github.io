@@ -1,0 +1,51 @@
+# Site settings
+title: "Jekyll Resume Template"
+description: "A resume template for Jekyll and GitHub Pages sites."
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Design settings
+resume_theme:                   default
+
+# Note: when editing locally, remember to restart
+# your Jekyll server when you edit this file. Changes
+# to _config.yml are only recognized when the server starts
+
+
+
+
+
+
+# title: Mateusz Bocian
+# description: Bookmark this to keep an eye on my project updates!
+#
+# plugins:
+#   - jekyll-include-cache
+#
+# remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+# # Documentation: https://mmistakes.github.io/minimal-mistakes/
+#
+#
+# # title: Mateusz Bocian
+# # url: "https://mrstork.github.io"
+# # permalink: "/blog/:year/:month/:day/:title/"
+# # github_username:  mrstork
+#
+# # Build settings
+# # markdown: kramdown
+#
+# # Exclude from processing.
+# # The following items will not be processed, by default. Create a custom list
+# # to override the default setting.
+# # exclude:
+# #   - Gemfile
+# #   - Gemfile.lock
+# #   - node_modules
+# #   - vendor/bundle/
+# #   - vendor/cache/
+# #   - vendor/gems/
+# #   - vendor/ruby/

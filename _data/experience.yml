@@ -1,0 +1,78 @@
+# Jobs
+
+- company: Borrowell Inc.
+  position: Lead Software Engineer
+  duration: August 2021 &mdash; November 2022
+  profile: Provider of Equifax credit report monitoring and credit product recommendations to over 2 million members. In recent years they have developed a line of their own credit building products focused on helping people with lower than average credit scores.
+  summary:
+  - Lead a team of 2-4 engineers through 2 large projects (2+ months) and several smaller projects and initiatives (~2-3 weeks each) all focused around member engagement and retention. Worked closely with the product manager, designer, and various stakeholders around the organization to align on project scope and delivery timelines, setting appropriate expectations and following through by meeting or exceeding them.
+  - A large percentage of individuals around me were new to their field or role, so I had the opportunity and privilege to teach them what I knew and help them along to the next version of themselves.
+  - "Outside of leading a team, time was spent on individual contributions. Some highlights follow:"
+  achievements:
+  - Upgraded 4 systems to .NET 6 and latest libraries, trained my team allowing them to upgrade 4 more systems on their own. Updates removed over 50 CWEs from the deployed systems and unlocked the latest language features + optimizations.
+  - Converted 5 systems to CI/CD, thus removing them from bi-weekly web team release cycles. Helped to make releases easier and more consistent - ultimately allowing the move towards weekly release cycles.
+  - Resolved exception noise across multiple systems that was generating ~120K error reports per week that were clouding the company alerting channels. Followed-up by building up a culture of zero exception tolerance on new projects/features.
+  - Pushed the product team to resolve unused feature flags which lead to the completion and clean up of over 40 A/B tests and associated code. The product team now has robust documentation around each of their experiments including experiment goals, release calendar, and results/findings.
+  - Implemented and standardized developer tools across 9 frontend repositories to enforce code style, easing the transition for engineers between various parts of the system.
+
+
+- company: Proof Data Technology
+  position: Senior Software Engineer
+  duration: February 2020 &mdash; July 2021
+  profile: Proof enables governments to complete approvals faster, saving governments money, increasing transparency, and unlocking data, through workflow approval and analytics software.
+  achievements:
+  - headline: Worked with the CTO / Team Lead to improve processes around code delivery and deployment to increase team velocity and improve the quality of the product.
+    bullets:
+    - Empower all engineers to ship to production, pushing the team towards CI/CD
+    - Helped formalize the team’s guiding metric and prioritization methodology. Shared these with the engineering team and the wider organization.
+    - Helped to focus the team, and made prioritization easier for leadership and individual contributors going forward.
+  - Acted as team lead and technical point of contact for the organization during any CTO vacations, paternity leave, or unplanned absences. Ensured delivery goals continued to be met, and that the team had whatever they needed to complete any assigned tasks.
+  - Sole developer on Azure SAML SSO integration and complementary onboarding documentation, helping to unblock progress on current customer files and support future sales.
+  - headline: Technical lead on several client files
+    bullets:
+    - Built out new features to support outstanding customer requests and integrations
+    - Collaborated with clients’ Azure teams to assist with their onboarding onto our platform.
+    - Point of contact on any technical issues affecting the file
+  - headline: Built the “Yukon Covid Dashboard” that was shown in weekly government meetings. Informed the client of travel volumes into the territory, and influenced various policy and process changes in the organization.
+    bullets:
+    - Managed complex SQL queries throughout rapid iterations in early phases of project
+    - Used form iterations to teach our team and the client some data management best practices
+  - headline: Independently started several large scale projects with the goal of growing the product, increasing product retention, encouraging referrals, or helping with developer quality of life. Projects included
+    bullets:
+    - Form rendering engine
+    - Event-driven metrics architecture
+    - Front end overhaul and framework upgrade
+    - Email redesign
+    - Extensive code removal and refactors
+
+
+- company: Fiix Software Inc.
+  position: Data Engineer / Data Analyst
+  duration:  May 2019 &mdash; January 2020
+  profile: Fiix is a cloud-based maintenance management system that helps maintenance teams organize assets, manage work, connect to other business systems, and make data driven decisions.
+  achievements:
+  - Work with leaders from the sales and marketing departments to come up with measurable and actionable metrics for their team to focus on and improve upon. Build team dashboards and reports for individuals and leaders to track progress against their goals.
+  - Build, manage, and maintain the data pipelines in charge of moving data from the product and various third-party services into a data warehouse. Support decision making across the business, funnel measurement, and fundraising.
+
+
+- company: Wave
+  position: Data Engineer
+  duration: September 2018 &mdash; February 2019
+  profile: "Wave provides a suite of financial services and online software for small businesses ranging from: invoicing, payables etc. The company managed more than $244 billion in income and expense transactions for its customers, including $16 billion in annual invoicing."
+  achievements:
+  - Optimized and trimmed several hours off of nightly ETL/ELT jobs, built in Python, Javascript, SQL, and Pentaho, freeing up system resources to ultimately allow the Analytics teams to start their work earlier in the day and get results from the data warehouse much sooner.
+  - Took part in a cross-department collaboration to build a Zendesk integration, built with Python and executed on AWS Lambda, that provides just-in-time information for businesses contacting the support team via live chat or help center. Improved customer service department efficiency by helping to reduce time to customer response.
+  - Generated system documentation and reduced the system programming languages in pipelines to strictly Python and SQL allowing more members of the data team to interact and contribute to the system, while improving the change review process.
+  - Responded to daily ad-hoc data requests to support the Analytics team and project managers around the organization in building new products and supporting business decisions, as well as collecting data product usage reports to reply to subpoenas.
+  - Hosted discussions to help educate my team members about issues in the current system architecture and to plan the future system together. Lead collaboration efforts to fix existing issues and to prevent their occurrences moving forward.
+
+
+- company: Wave
+  position: Software Engineer
+  duration: June 2017 &mdash; September 2018
+  achievements:
+  - Launched Checkouts, a new payments processing vehicle built on Django and React.js and fully integrated into the existing Wave ecosystem enabling customers to collect payments through an e-commerce-like flow. In the first year the new product averaged about 60% returns above the industry average. Started as the sole developer building out the groundwork for the product, helping train 2 new members on the architecture before collaborating to deliver an alpha test 3 months after their start date.
+  - Responsible for shutting down 2 large product components - an integrated A/B testing third-party service, and the legacy recurring invoice product, together accounted for roughly 120K deleted lines of code spread across numerous repositories. Saved tens of thousands a year on product fees, reduced front end package size, and improved developer quality of life in the modified services.
+  - Sole developer on the team that launched the latest Wave onboarding experience. The changes were first launched as an A/B test segmented by cohorts resulting in higher average revenue per business and improved customer retention.
+  - Worked outside of day-to-day responsibilities to independently release a major version upgrade to the framework on critical core service. Saved on average about 2 - 5 ms per API call and a 1/3 of the service's working memory.
+  - Championed web accessibility and responsive layouts throughout employment. Implemented application-wide changes, and trained other developers and design team members on the ideas. Worked towards a company culture that recognizes the importance of inclusivity on the web, improved customer mobile experiences, and moved the product closer to AODA standards.
