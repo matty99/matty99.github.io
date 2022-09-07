@@ -1,0 +1,20 @@
+//== Layout
+.wrapper {
+  max-width: calc(800px - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+  @include media-query($on-laptop) {
+    max-width: calc(800px - (#{$spacing-unit}));
+  }
+}
+
+%clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}

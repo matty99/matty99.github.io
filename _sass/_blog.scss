@@ -1,0 +1,45 @@
+/* Post list */
+.page-content {
+  padding: $spacing-unit 0;
+}
+
+.blog-post-stack > * + * {
+  margin-top: 2rem;
+}
+
+.blog-post {
+  &__date {
+    color: $grey-color;
+    font-size: 0.6875rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 2px;
+  }
+
+  &__title {
+    display: block;
+    font-size: $font-size-h4;
+  }
+
+  &__description {
+    margin-top: 4px;
+  }
+}
+
+/* Posts*/
+.post-header {
+  margin-bottom: $spacing-unit;
+}
+
+.post-title {
+  font-size: $font-size-h3;
+}
+
+.post-content {
+  margin-bottom: $spacing-unit;
+
+  img {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="blog-post-stack">
+  {% for post in site.categories.blog %}
+    <article class="blog-post">
+      <time class="blog-post__date">{{ post.date | date: "%B %-d, %Y" }}</time>
+      <a class="blog-post__title" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
+      <span class="blog-post__description">{{ post.description }}</span>
+    </article>
+  {% endfor %}
+</div>

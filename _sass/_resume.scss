@@ -1,0 +1,59 @@
+.section-title {
+  color: $brand-color;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+
+.company-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.position {
+  margin: 40px 0;
+}
+
+.position-summary {
+  width: 550px;
+}
+
+.company-logo {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  padding: 15px;
+  border-radius: 50%;
+  border: 2px dotted $grey-color;
+
+  flex-shrink: 0;
+  margin-left: 30px;
+
+  img {
+    width: 100%;
+    align-self: center;
+  }
+}
+
+.job-title {
+  display: block;
+  font-size: $font-size-h4;
+}
+
+.employment-duration {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.tag-list {
+  font-style: italic;
+}
+
+.sub-position {
+  padding: $spacing-unit;
+
+  .job-title {
+    font-size: 1.2rem;
+  }
+}
