@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+
+      <header class="page-header">
+
+        <!-- You can turn off the avatar in _config.yml by setting to false -->
+        <img src="assets/images/mrstork.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+
+        <!-- Your name is defined in the _config.yml file -->
+        <h1 class="header-name" itemprop="name">{{ site.data.profile.name }}</h1>
+
+        <div class="executive-summary" itemprop="description">
+          <p>{{ site.data.profile.summary }}</p>
+        </div>
+
+      </header>
+
+      <!-- begin Experience -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Experience</h2>
+        </header>
+
+        {% for job in site.data.experience %}
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">{{ job.company }}</h3>
+          <h4 class="resume-item-details" itemprop="description">{{ job.position }} &bull; {{ job.duration }}</h4>
+          <p class="resume-item-list company-profile" itemprop="description">{{ job.profile }}</p>
+
+          {% for summary in job.summary %}
+          <p class="resume-item-list">{{ summary }}</p>
+          {% endfor %}
+
+          <ul class="resume-item-list">
+            {% for achievement in job.achievements %}
+              {% if achievement.headline %}
+                <li>{{ achievement.headline }}</li>
+                <ul class="resume-item-list">
+                  {% for bullet in achievement.bullets %}
+                  <li>{{ bullet }}</li>
+                  {% endfor %}
+                </ul>
+              {% else %}
+                <li>{{ achievement }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+
+        </div><!-- end of resume-item -->
+        {% endfor %}
+
+      </section>
+      <!-- end Experience -->
+
+      <!-- begin Education -->
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Education</h2>
+        </header>
+
+        {% for education in site.data.education %}
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">{{ education.uni }}</h3>
+          <h4 class="resume-item-details group" itemprop="description">{{ education.degree }} &bull; {{ education.year }}</h4>
+          <p class="resume-item-copy">{{ education.summary }}</p>
+        </div>
+        {% endfor %}
+      </section>
+      <!-- end Education -->
+
+      <!-- begin Interests -->
+      <section class="content-section">
+
+        <header class="section-header">
+          <h2>Hobbies and Interests</h2>
+        </header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            {% for interest in site.data.interests %}
+            <li>{{ interest.description }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </section>
+      <!-- end Interests -->
+
+    </div>
+
+  </body>
+
+</html>
